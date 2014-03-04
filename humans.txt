@@ -1,0 +1,4 @@
+/* TEAM */
+
+	UI & Backend developer: Roman Ilyushin
+	From: New York, USA

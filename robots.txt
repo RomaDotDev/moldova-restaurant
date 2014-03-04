@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /iframe
+Sitemap: http://m.moldaviancuisine.com/sitemap.xml
+Host: m.moldaviancuisine.com

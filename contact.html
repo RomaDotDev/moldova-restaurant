@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">		
+		<meta name="format-detection" content="telephone=no">
+		<title>Moldova Restaurant | Address and phone</title>
+		<meta name="description" content="Moldova Restaurant address, phone number, reservation and directions" />
+		<link rel="shortcut icon" href="favicon.png"/>
+		<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" href="touch-icon-iphone.png" />				
+		
+		<link rel="stylesheet" href="css/sidebar.css?v1" />
+		<link rel="stylesheet" href="css/jquery.mobile.min.css?v1" />
+		<link rel="stylesheet" href="css/style.css?v2" />		
+		
+		<script src="js/vendor/jquery.min.js?v1"></script>
+		<script src="js/vendor/jquery.mobile.min.js?v1"></script>
+		<script>
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-33528867-1']);
+		  _gaq.push(['_setDomainName', 'moldaviancuisine.com']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+
+// Map init
+			function scale( width, height, padding, border ) {
+			    var scrWidth = $( window ).width() - 30,
+			        scrHeight = $( window ).height() - 30,
+			        ifrPadding = 2 * padding,
+			        ifrBorder = 2 * border,
+			        ifrWidth = width + ifrPadding + ifrBorder,
+			        ifrHeight = height + ifrPadding + ifrBorder,
+			        h, w;
+			
+			    if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
+			        w = ifrWidth;
+			        h = ifrHeight;
+			    } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
+			        w = scrWidth;
+			        h = ( scrWidth / ifrWidth ) * ifrHeight;
+			    } else {
+			        h = scrHeight;
+			        w = ( scrHeight / ifrHeight ) * ifrWidth;
+			    }
+			
+			    return {
+			        'width': w - ( ifrPadding + ifrBorder ),
+			        'height': h - ( ifrPadding + ifrBorder )
+			    };
+			};
+
+			$( document ).on( "pageinit", "#contact", function() {
+				
+				$( "#popupMap iframe" )
+				        .attr( "width", 0 )
+				        .attr( "height", 0 );
+				
+				    $( "#popupMap iframe" ).contents().find( "#map_canvas" )
+				        .css( { "width" : 0, "height" : 0 } );
+				
+				    $( "#popupMap" ).on({
+				        popupbeforeposition: function() {
+				            var size = scale( 480, 320, 0, 1 ),
+				                w = size.width,
+				                h = size.height;
+				
+				            $( "#popupMap iframe" )
+				                .attr( "width", w )
+				                .attr( "height", h );
+				
+				            $( "#popupMap iframe" ).contents().find( "#map_canvas" )
+				                .css( { "width": w, "height" : h } );
+				        },
+				        popupafterclose: function() {
+				            $( "#popupMap iframe" )
+				                .attr( "width", 0 )
+				                .attr( "height", 0 );
+				
+				            $( "#popupMap iframe" ).contents().find( "#map_canvas" )
+				                .css( { "width": 0, "height" : 0 } );
+				        }
+				    });
+			    
+			});
+
+		
+		</script>
+
+	</head>
+	<body>
+
+
+<!-- Contact page -->
+		<div data-role="page" class="type-interior" id="contact">
+
+
+			<div data-role="panel" id="menupanel" data-theme="g">
+				<ul data-role="listview" data-theme="g" data-divider-theme="g">
+					<li data-role="list-divider">Menus</li>
+					<li data-icon="food"><a href="menu.html" rel="external">Casual Menu</a></li>
+					<li data-icon="lunch"><a href="lunch.html" rel="external">Lunch Menu</a></li>
+					<li data-icon="gift"><a href="banquet.html" rel="external">Banquet Menu</a></li>
+					
+					<li data-role="list-divider">Restaurant</li>
+					<li data-icon="picture"><a href="gallery.html" rel="external">Gallery</a></li>
+					<li data-icon="info-sign"><a href="about-us.html" rel="external">About Us</a></li>
+					<li data-icon="quote-left"><a href="testimonials.html" rel="external">Testimonials</a></li>
+					<li data-icon="map-marker" class="ui-btn-active"><a href="contact.html" rel="external">Contact</a></li>
+				</ul>
+			</div><!-- /panel -->
+
+			<div data-role="header" data-position="fixed">
+				<h1>Contact</h1>
+				<a href="#menupanel" data-role="button" data-icon="reorder" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>				
+			</div><!-- /header -->
+			
+			<div data-role="content">
+
+
+				<div class="ui-grid-a ui-responsive">
+					<div class="ui-block-a" style="text-align:center">
+
+						<div itemscope="" itemtype="http://schema.org/Restaurant">
+							<p><span itemprop="name">Moldova Restaurant Brooklyn</span></p>
+							<meta itemprop="legalName" content="La Moldova Inc.">
+							<meta itemprop="logo" content="http://m.moldaviancuisine.com/images/Moldova-Restaurant-logo-big.png">
+							<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+								<p><span itemprop="streetAddress">1827 Coney Island Ave</span>, <br>
+									<span itemprop="addressLocality">Brooklyn</span>, <span itemprop="addressRegion">NY</span><meta itemprop="postalCode" content="11230"></p>
+							</div>
+							<meta itemprop="description" content="Moldova Restaurant is the first Moldavian cuisine restaurant located in New York. Try authentic Moldavian hot and cold dishes, soups, salads and desserts.">
+							<meta itemprop="url" content="http://http://www.moldaviancuisine.com">
+							<p>Tel: <a href="tel:+17189982892" class="ui-icon-phone"><span itemprop="telephone">(718) 998-2892</span></a><br>
+							<a href="tel:+17189982827" class="ui-icon-phone">(718) 998-2827</a></p>
+							<meta itemprop="email" content="info@moldaviancuisine.com">
+							<meta itemprop="openingHours" content="Mo-Su 11:00-23:59">
+							<p>Work hours: Mon-Sun 11.00am-11.59pm<sup>*</sup></p>
+							<meta itemprop="priceRange" content="$$">
+							<meta itemprop="servesCuisine" content="Moldavian">
+							<meta itemprop="servesCuisine" content="Eastern European">
+							<meta itemprop="paymentAccepted" content="cash">
+							<meta itemprop="paymentAccepted" content="credit card">
+							<meta itemprop="currenciesAccepted" content="USD">
+							<meta itemprop="menu" content="http://http://www.moldaviancuisine.com">
+							<meta itemprop="acceptsReservations" content="Yes">
+			
+							<a href="#mapBrooklyn" data-rel="popup" data-position-to="window" data-role="button" data-theme="b" data-inline="true">Open Map</a>
+								
+							<div data-role="popup" id="mapBrooklyn" data-overlay-theme="a" data-theme="a" data-corners="false" data-tolerance="15,15">
+			
+							    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+								 
+							    <iframe src="mapBrooklyn.html" width="480" height="320" seamless></iframe>
+								 
+							</div>
+						</div>
+
+					</div>
+					<div class="ui-block-b" style="text-align:center">
+
+						<div itemscope="" itemtype="http://schema.org/Restaurant">
+							<p><span itemprop="name">Moldova Restaurant Philadelphia</span></p>
+							<meta itemprop="legalName" content="La Moldova Inc.">
+							<meta itemprop="logo" content="http://m.moldaviancuisine.com/images/Moldova-Restaurant-logo-big.png">
+							<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+								<p><span itemprop="streetAddress">9808 Bustleton Avenue, Unit H</span>, <br>
+									<span itemprop="addressLocality">Philadelphia</span>, <span itemprop="addressRegion">PA</span><meta itemprop="postalCode" content="19115"></p>
+							</div>
+							<meta itemprop="description" content="Moldova Restaurant is the first Moldavian cuisine restaurant located in New York. Try authentic Moldavian hot and cold dishes, soups, salads and desserts.">
+							<meta itemprop="url" content="http://http://www.moldaviancuisine.com">
+							<p>Tel: <a href="tel:+12675382710" class="ui-icon-phone"><span itemprop="telephone">(267) 538-2710</span></a><br>
+							<a href="tel:+12675382709" class="ui-icon-phone">(267) 538-2709</a></p>
+							<meta itemprop="email" content="info@moldaviancuisine.com">
+							<meta itemprop="openingHours" content="Mo-Su 11:00-23:59">
+							<p>Work hours: Mon-Sun 11.00am-11.59pm<sup>*</sup></p>
+							<meta itemprop="priceRange" content="$$">
+							<meta itemprop="servesCuisine" content="Moldavian">
+							<meta itemprop="servesCuisine" content="Eastern European">
+							<meta itemprop="paymentAccepted" content="cash">
+							<meta itemprop="paymentAccepted" content="credit card">
+							<meta itemprop="currenciesAccepted" content="USD">
+							<meta itemprop="menu" content="http://http://www.moldaviancuisine.com">
+							<meta itemprop="acceptsReservations" content="Yes">
+			
+							<a href="#mapPhilly" data-rel="popup" data-position-to="window" data-role="button" data-theme="b" data-inline="true">Open Map</a>
+								
+							<div data-role="popup" id="mapPhilly" data-overlay-theme="a" data-theme="a" data-corners="false" data-tolerance="15,15">
+			
+							    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+								 
+							    <iframe src="mapPhilly.html" width="480" height="320" seamless></iframe>
+								 
+							</div>
+						</div>
+
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div style="text-align: center">
+					<p><a href="mailto:info@moldaviancuisine.com" class="ui-icon-envelope">info@moldaviancuisine.com</a></p>
+					
+					<p><sub>*Kitchen closes at 10.30pm</sub></p>
+				</div>
+				
+			</div><!-- /content -->
+			
+			<div data-role="footer" class="pagefooter">
+				<p id="menu_footer">
+					<a rel="nofollow" target="_blank" href="http://m.yelp.com/biz/moldova-restaurant-brooklyn"><span class="ui-icon ui-icon-yelp"></span></a>
+					<a rel="nofollow" target="_blank" href="https://m.facebook.com/moldovarestaurant"><span class="ui-icon ui-icon-facebook"></span></a>
+					<a rel="nofollow" target="_blank" href="https://mobile.twitter.com/MoldovaNY"><span class="ui-icon ui-icon-twitter"></span></a>
+					<a rel="nofollow" target="_blank" href="https://plus.google.com/105705932386237233076"><span class="ui-icon ui-icon-google-plus"></span></a>
+					<a rel="nofollow" target="_blank" href="http://m.vk.com/moldovarestaurant"><span class="ui-icon ui-icon-vkontakte"></span></a>
+				</p>
+
+				<div class="ui-grid-a ui-responsive">
+					<div class="ui-block-a">
+						<p>Moldova Restaurant Brooklyn<br>
+							1827 Coney Island Ave<br> 
+							Brooklyn NY 11230<br>
+							Tel: <a href="tel:+17189982892" class="ui-icon-phone">(718) 998-2892</a><br>
+							<a href="tel:+17189982827" class="ui-icon-phone">(718) 998-2827</a>
+						</p>
+					</div>
+					<div class="ui-block-b">
+						<p>Moldova Restaurant Philadelphia<br>
+							9808 Bustleton Avenue, Unit H<br> 
+							Philadelphia PA 19115<br>
+							Tel: <a href="tel:+12675382710" class="ui-icon-phone">(267) 538-2710</a><br>
+							<a href="tel:+12675382709" class="ui-icon-phone">(267) 538-2709</a>
+						</p>
+					</div>
+				</div><!-- /grid-a -->
+				<p>
+					&copy; 2012-2014 Moldova Restaurant
+				</p>
+
+				<p><a href="http://www.moldaviancuisine.com?m=0" rel="external">Full site</a></p>	
+			</div>
+
+		</div><!-- /page -->
+
+		
+	</body>
+</html>

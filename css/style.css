@@ -1,0 +1,1145 @@
+/*===================
+ * 
+ * Global Styles override
+ * 
+ ====================*/
+
+.clear{
+	clear:both;
+}
+
+div [data-role="content"]{
+	margin: auto;
+	max-width: 1050px;
+}
+
+.ui-header .ui-title {
+	margin: .6em 10% .8em;
+}
+
+.ui-btn-icon-right > .ui-btn-inner > .ui-icon{
+	right: 5px;
+}
+
+#menu .ui-btn-icon-right > .ui-btn-inner > .ui-icon{
+	margin-top: 4px;
+}
+
+.ui-li-has-arrow.ui-li-has-count .ui-li-count {
+	right: 10px;
+	top: 20px;
+}
+
+.ui-li-has-arrow.ui-li-has-count .ui-btn-inner a.ui-link-inherit{
+	padding: 0 35px 0 0;
+}
+
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit{
+	padding-left: 90px;
+}
+
+div [data-role="content"] .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+	padding: 0 25px 0 0;
+}
+
+#menu .ui-content, #banquet .ui-content{
+	padding-top: 0;
+}
+
+/*===================
+ * 
+ * Font vector icons
+ * 
+ ====================*/
+
+/*
+  Font Custom - icon webfonts made simple
+*/
+
+@font-face {
+  font-family: "fontcustom";
+  src: url("../fonts/fontcustom-0fde56232a2461ffced521b1b47ba2e9.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/fontcustom-0fde56232a2461ffced521b1b47ba2e9.woff") format("woff"),
+       url("../fonts/fontcustom-0fde56232a2461ffced521b1b47ba2e9.ttf") format("truetype"),
+       url("../fonts/fontcustom-0fde56232a2461ffced521b1b47ba2e9.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.ui-icon, .ui-icon-alt .ui-icon {
+  width: 20px;
+  height: 20px;
+  background: none;
+  box-shadow: none;
+}
+
+
+.ui-btn-icon-notext .ui-btn-inner .ui-icon {
+	float: left;
+	margin: 0px 1px 2px 3px;
+}
+
+[class^="ui-icon-"]:before, [class*=" ui-icon-"]:before, .vector-icon:before {
+  font-family: "fontcustom";
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+a [class^="ui-icon-"], a [class*=" ui-icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.ui-icon-large:before {
+  vertical-align: top;
+  font-size: 1.333em;
+}
+
+/* keeps button heights with and without icons the same */
+.btn [class^="ui-icon-"], .btn [class*=" ui-icon-"] {
+  line-height: 0.9em;
+}
+
+li [class^="ui-icon-"], li [class*=" ui-icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+
+/* 1.5 increased font size for ui-icon-large * 1.25 width */
+li .ui-icon-large[class^="ui-icon-"], li .ui-icon-large[class*=" ui-icon-"] {
+  width: 1.875em;
+}
+
+li[class^="ui-icon-"], li[class*=" ui-icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+li[class^="ui-icon-"]:before, li[class*=" ui-icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+
+li[class^="ui-icon-"].ui-icon-large:before, li[class*=" ui-icon-"].ui-icon-large:before {
+  text-indent: -1.333em;
+}
+
+/*
+  Icon Classes
+*/
+
+.vector-icon { background: white; color: rgb(173, 177, 177); }
+
+.ui-icon-minus:before { content: "\f105"; }
+.ui-icon-arrow-r:before { content: "\f10f";  }
+.ui-icon-plus:before { content: "\f103"; }
+.ui-icon-delete:before { content: "\f10a"; font-size: 1em; margin: 3px 0 0 0; }
+
+.ui-icon-phone:before { content: "\f100"; text-decoration: none; margin-right: .3em; }
+.ui-icon-reorder:before { content: "\f101"; font-size: 1.4em; }
+.ui-icon-gift:before { content: "\f102"; }
+.ui-icon-sort:before { content: "\f103"; }
+.ui-icon-envelope:before { content: "\f104"; text-decoration: none; margin-right: .3em; }
+.ui-icon-caret-up:before { content: "\f105"; }
+.ui-icon-map-marker:before { content: "\f106"; }
+.ui-icon-google-plus:before { content: "\f108"; }
+.ui-icon-facetime-video:before { content: "\f109"; }
+.ui-icon-remove:before { content: "\f10a"; }
+.ui-icon-star:before { content: "\f10b"; }
+.ui-icon-facebook:before { content: "\f10c"; }
+.ui-icon-star-empty:before { content: "\f10d"; }
+.ui-icon-angle-right:before { content: "\f10f"; }
+.ui-icon-lunch:before { content: "\f111"; }
+.ui-icon-picture:before { content: "\f112"; }
+.ui-icon-yelp:before { content: "\f113"; }
+.ui-icon-info-sign:before { content: "\f114"; }
+.ui-icon-vkontakte:before { content: "\f115"; }
+.ui-icon-food:before { content: "\f117"; }
+.ui-icon-quote-left:before { content: "\f118"; }
+.ui-icon-youtube:before { content: "\f119"; }
+.ui-icon-search:before { content: "\f11a"; }
+.ui-icon-laptop:before { content: "\f11c"; }
+.ui-icon-twitter:before { content: "\f11d"; }
+.ui-icon-star-half:before { content: "\f11e"; }
+
+#Coffee:before { content: "\f116"; }
+#Tea:before { content: "\f10e"; }
+#Apa-Minerala:before { content: "\f110"; }
+#Punch:before { content: "\f107"; }
+#Juice:before { content: "\f11b"; }
+#Coffee:before { content: "\f116"; }
+#Espresso:before { content: "\f116"; }
+#Cappuccino:before { content: "\f116"; }
+
+/* Customisation for close menu and close icons */
+a[data-icon="delete"], a[data-icon="reorder"]{
+	background: none;
+	border: none;
+	padding: .5em;
+}
+
+a[data-icon="reorder"]{
+	margin-top: -.2em!important;	
+}
+
+a[data-icon="delete"]{
+	margin: .5em .5em!important;
+}
+
+a[data-icon="delete"] .ui-btn-inner, a[data-icon="reorder"] .ui-btn-inner{
+	border: none;
+	border-radius: 0!important;
+}
+
+
+/*===================
+ * 
+ * Sidebar menu
+ * 
+ ====================*/
+
+
+#menupanel .ui-li-divider {
+	padding: .2em 15px;
+	font-size: 12px;
+}
+
+#menupanel .ui-btn-icon-right > .ui-btn-inner > .ui-icon {
+	margin-top: -9px;
+	left: 9px;
+}
+
+#menupanel .ui-li-has-arrow .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow {
+	padding-left: 40px;
+}
+
+/*===================
+ * 
+ * Footer
+ * 
+ ====================*/
+
+
+.pagefooter{
+	color: #939393;
+	font-size: 0.8em;
+	text-align: center;
+	padding-bottom: 3em;
+}
+
+#full_site{
+	display: block;
+	clear: both;
+	padding: 10px;
+}
+
+#menu_footer{
+	display: block;
+	clear: both;
+	padding: 10px;
+	margin: 0 auto;
+	width: 215px;
+	height: 32px;				
+}
+
+#menu_footer a{
+	display: inline-block;
+	height: 2em;
+	width: 2em;
+	margin: .5em;
+	text-shadow: 0 -1px 0 black;
+	text-decoration: none;
+	position: relative;
+	color: white;
+}
+
+#menu_footer a span{
+	font-size: 2em;
+}
+
+
+/*===================
+ * 
+ * Pop-ups
+ * 
+ ====================*/
+
+div[data-role="popup"] p {
+	clear: both;
+	padding: .5em 1em;
+}
+
+div[data-role="popup"] div[data-role="header"] {
+	border-radius: .6em .6em 0 0
+}
+
+.ui-popup{
+	text-align: center;	
+}
+
+@media (max-width: 48em) {
+	.ui-popup .ui-title, .ui-popup p {
+		font-size: .75em;
+	}
+}
+/*===================
+ * 
+ * Index page
+ * 
+ ====================*/
+
+/* delete gradient on gradient on index page */
+#index{
+	background: #f9f9f9!important;	
+}
+
+#logo-wrapper{
+	display: block;
+	height: 200px; 
+	width: 100%;
+}
+
+	#logo{
+		max-width: 200px;
+		background: url(../images/index/phone2x/Moldova-Restaurant-logo-big.jpg) no-repeat;
+		height: inherit;
+		background-size: contain;
+		margin: auto;
+	}
+
+
+@media all and (min-width: 576px){
+	#logo-wrapper{
+		height: 335px;
+	}
+	
+	#logo{
+		max-width: 330px;
+		background: url(../images/index/tablet2x/Moldova-Restaurant-logo-big.jpg) no-repeat;
+		background-size: contain;
+	}
+
+}
+
+/*===================
+ * 
+ * Testimonails page
+ * 
+ ====================*/
+#yelpRating{
+	float:left; 
+	margin-right:1.5em;
+}
+
+blockquote{
+	margin: 0;
+	padding: 0;
+}
+
+blockquote .ui-icon{
+	float: left;
+}
+
+blockquote .ui-icon-quote-left{
+	font-size: 2em;
+}
+
+.entry-inner, .entry-author{
+	display: block;
+	margin-left: 3em;
+}
+
+.entry-outer,  .entry-outer-responsible{
+	border-bottom: 1px solid #2489ce;
+	display: block;
+}
+
+
+/*===================
+ * 
+ * About us page
+ * 
+ ====================*/
+
+#goldmanlogo{
+	background: url(../images/about-us/thumbs/goldman-sachs-logo.png);
+}
+
+#citilogo{
+	background: url(../images/about-us/thumbs/citigroup-logo.png);
+}
+
+#suisselogo{
+	background: url(../images/about-us/thumbs/credit-suisse-logo.png);
+}
+
+#signage{
+	background: url(../images/about-us/phone2x/signage.jpg);	
+}
+#goldman{
+	background: url(../images/about-us/phone2x/at-goldman-sachs.jpg);	
+}
+#citi{
+	background: url(../images/about-us/phone2x/at-citigroup.jpg);
+}
+
+#suisse{
+	background: url(../images/about-us/phone2x/at-Credit-Suisse.jpg);	
+}
+
+@media all and (max-width: 560px){
+
+	.margincell{
+		margin-top: 3em;
+	}
+
+}
+
+@media all and (min-width: 768px){
+
+	.margincell{
+		margin-top: 0;
+	}
+
+	#signage{
+		background: url(../images/about-us/tablet2x/signage.jpg);	
+	}
+	#goldman{
+		background: url(../images/about-us/tablet2x/at-goldman-sachs.jpg);	
+	}
+	#citi{
+		background: url(../images/about-us/tablet2x/at-citigroup.jpg);
+	}
+
+	#suisse{
+		background: url(../images/about-us/tablet2x/at-Credit-Suisse.jpg);	
+	}
+	
+}
+
+
+.image-wrapper {
+	position:relative;
+	padding:50% 0 0 0;
+	height:0;
+}
+
+.image {
+	position:absolute;
+	left: 0em;
+	top: 0em;
+	right: 0em;
+	bottom: 0em;
+	background-position: center!important;
+	background-size: contain!important;
+	background-repeat: no-repeat!important;
+	width: 100%;
+}
+
+
+.caption{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+/*===================
+ * 
+ * Lunch Menu page
+ * 
+ ====================*/
+
+#frigarui-de-gaina-zeama-combo{
+	background: url(../images/lunch/phone2x/Frigarui-de-Gaina-Zeama-lunch-combo.jpg);
+}
+
+#mamaliga-trapeza-taranesc-lunch-combo{
+	background: url(../images/lunch/phone2x/Mamaliga-Trapeza-Taranesc-lunch-combo.jpg);
+}
+
+
+
+/*===================
+ * 
+ * Gallery page
+ * 
+ ====================*/
+
+/* Phone HDPI */
+.slide{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+}
+
+	.family-party{ 	background: url(../images/gallery/phone2x/01-family-party.jpg); } 
+	.green-room-banquet-preparations{ background: url(../images/gallery/phone2x/02-green-room-banquet-preparations.jpg); }
+	.martisor{ background: url(../images/gallery/phone2x/03-martisor.jpg); }
+	.new-year-party-dancing{ background: url(../images/gallery/phone2x/04-new-year-party-dancing.jpg); }
+	.new-year-signange{ background: url(../images/gallery/phone2x/05-new-year-signange.jpg); }
+	.st-valentines-party-signage{ background: url(../images/gallery/phone2x/06-st-valentines-party-signage.jpg); }
+	.st-valentines-amor-concert{ background: url(../images/gallery/phone2x/07-st-valentines-amor-concert.jpg); }
+	.high-relief{ background: url(../images/gallery/phone2x/08-high-relief.jpg); }
+	.christmas-restaurant-signage{ background: url(../images/gallery/phone2x/09-christmas-restaurant-signage.jpg); }
+	.sign{ background: url(../images/gallery/phone2x/10-sign.jpg); }
+	.moldova-room-tables{ background: url(../images/gallery/phone2x/11-moldova-room-tables.jpg); }
+	.green-room-banquet{ background: url(../images/gallery/phone2x/12-green-room-banquet.jpg); }
+	.figurine{ background: url(../images/gallery/phone2x/13-figurine.jpg); }
+	.national-costumes{ background: url(../images/gallery/phone2x/14-national-costumes.jpg); }
+	.moldova-room-overview{ background: url(../images/gallery/phone2x/15-moldova-room-overview.jpg); }
+	.earthenware-jar{ background: url(../images/gallery/phone2x/16-earthenware-jar.jpg); }
+	.authentic-decor{ background: url(../images/gallery/phone2x/17-authentic-decor.jpg); }
+	.moldova-room-banquet-preparation{ background: url(../images/gallery/phone2x/18-moldova-room-banquet-preparation.jpg); }
+	.moldova-room-1{ background: url(../images/gallery/phone2x/19-moldova-room-1.jpg); }
+	.green-room-1{ background: url(../images/gallery/phone2x/20-green-room-1.jpg); }
+	.green-room-2{ background: url(../images/gallery/phone2x/21-green-room-2.jpg); }
+	.green-room-3{ background: url(../images/gallery/phone2x/22-green-room-3.jpg); }
+	.moldova-room-2{ background: url(../images/gallery/phone2x/23-moldova-room-2.jpg); }
+	.moldova-room-3{ background: url(../images/gallery/phone2x/24-moldova-room-3.jpg); }
+
+	#gallery .ui-li-has-count .ui-li-count {
+		top: 88%;
+	}
+
+	#gallery .ui-listview .ui-li.ui-btn {
+		background-image: none;
+		border-color: #222;
+	}
+
+	#gallery .ui-content {
+		padding: 9px;
+	}
+
+	#gallery .ui-listview .ui-li.ui-btn {
+		float: left;
+		width: 80px; /* 33.3333% incl. 2 x 1.2% margin */
+		height: 80px;
+		margin: 9px 1.5%;
+		border-width: 0; /* The 1px border would break the layout so we set it on .ui-btn-inner instead. */
+	}
+	/* If you don't want a border at all, just set "border: none;" here to negate the semi white top border */
+	#gallery .ui-listview .ui-li.ui-btn-inner {
+		border: inherit;
+		border-width: 1px;
+		margin: -1px;
+	}
+	#gallery .ui-listview .ui-btn-inner,
+	#gallery .ui-listview .ui-btn-text,
+	#gallery .ui-listview .ui-link-inherit,
+	#gallery .ui-listview .ui-li-thumb,
+	#gallery .ui-listview .slide {
+		width: 100%;
+		height: 100%;
+		display: block;
+		overflow: hidden;
+	}
+	#gallery .ui-listview .ui-link-inherit {
+		padding: 0 !important;
+		position: relative;
+	}
+	/* Inherit the border-radius from the UL that has class .ui-corner-all in case of an inset listview. */
+	#gallery .ui-listview .ui-li,
+	#gallery .ui-listview .ui-btn-text,
+	#gallery .ui-listview .ui-link-inherit,
+	#gallery .ui-listview .ui-li-thumb,
+	#gallery .ui-listview .slide {
+		-webkit-border-radius: inherit;
+		border-radius: inherit;
+	}
+	#gallery .ui-listview .ui-li-thumb {
+		height: auto; /* To keep aspect ratio. */
+		max-width: 100%;
+		max-height: none;
+		margin: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+
+	/* Hide the icon */
+	#gallery .ui-listview .ui-icon {
+		display: none;
+	}
+	/* Make text wrap. */
+	#gallery .ui-listview .ui-li-heading,
+	#gallery .ui-listview .ui-li-desc {
+		white-space: normal;
+		overflow: visible;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	/* Text position */
+	#gallery .ui-listview .ui-li-heading {
+		margin: 0;
+		padding: 20px;
+	}
+	#gallery .ui-listview .ui-li-desc {
+		margin: 0;
+		padding: 0 20px;
+		min-height: 50%;
+		bottom: 0;
+		line-height: 1.5;
+		display: none;
+	}
+	/* Semi transparent background and different position if there is a thumb */
+	#gallery .ui-listview .ui-li-heading,
+	#gallery .ui-listview .ui-li-desc {
+		background: #111;
+		background: rgba(0,0,0,.5);
+		-webkit-background-clip: padding;
+		background-clip: padding-box;
+	}
+	#gallery .ui-listview .ui-li-heading {
+		bottom: 0;
+		color: white;
+		height: 17%;
+		padding: 10px;
+		text-shadow: 0 1px 0 #000;
+	}
+	#gallery .ui-listview .ui-li-desc {
+		padding: 0 10px;
+		min-height: 20%;
+		-webkit-border-bottom-left-radius: inherit;
+		border-bottom-left-radius: inherit;
+		-webkit-border-bottom-right-radius: inherit;
+		border-bottom-right-radius: inherit;
+	}
+	/* ui-li-aside has class .ui-li-desc as well so we have to override some things. */
+	#gallery .ui-listview .ui-li-desc.ui-li-aside {
+		padding: 2px 10px;
+		width: auto;
+		min-height: 0;
+		top: 0;
+		left: auto;
+		bottom: auto;
+		/* Custom styling. */
+		color: #c0c0c0;
+		background: #990099;
+		background: rgba(153,0,153,.85);
+		-webkit-border-top-right-radius: inherit;
+		border-top-right-radius: inherit;
+		-webkit-border-bottom-left-radius: inherit;
+		border-bottom-left-radius: inherit;
+		-webkit-border-bottom-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	/* If you want to add shadow, don't kill the focus style. */ 
+	#gallery .ui-listview .ui-btn:not(.ui-focus) {
+		-moz-box-shadow: 0px 0px 9px #111;
+		-webkit-box-shadow: 0px 0px 9px #111;
+		box-shadow: 0px 0px 9px #111;
+	}
+	/* Images mask the hover bg color so we give desktop users feedback by applying the focus style on hover as well. */
+	#gallery .ui-listview .ui-btn:hover {
+		-moz-box-shadow: 0px 0px 12px #387bbe;
+		-webkit-box-shadow: 0px 0px 12px #387bbe;
+		box-shadow: 0px 0px 12px #387bbe;
+	}
+	/* Animate focus and hover style, and resizing. */ 
+	#gallery .ui-listview .ui-btn {
+		-webkit-transition: all 500ms ease;
+		-moz-transition: all 500ms ease;
+		-o-transition: all 500ms ease;
+		-ms-transition: all 500ms ease;
+		transition: all 500ms ease;	
+	}
+
+@media all and (min-width: 768px){
+
+	.slide{
+		background: none;
+	}
+
+/* Tablet HDPI */
+
+	.family-party{ 	background: url(../images/gallery/tablet2x/01-family-party.jpg); } 
+	.green-room-banquet-preparations{ background: url(../images/gallery/tablet2x/02-green-room-banquet-preparations.jpg); }
+	.martisor{ background: url(../images/gallery/tablet2x/03-martisor.jpg); }
+	.new-year-party-dancing{ background: url(../images/gallery/tablet2x/04-new-year-party-dancing.jpg); }
+	.new-year-signange{ background: url(../images/gallery/tablet2x/05-new-year-signange.jpg); }
+	.st-valentines-party-signage{ background: url(../images/gallery/tablet2x/06-st-valentines-party-signage.jpg); }
+	.st-valentines-amor-concert{ background: url(../images/gallery/tablet2x/07-st-valentines-amor-concert.jpg); }
+	.high-relief{ background: url(../images/gallery/tablet2x/08-high-relief.jpg); }
+	.christmas-restaurant-signage{ background: url(../images/gallery/tablet2x/09-christmas-restaurant-signage.jpg); }
+	.sign{ background: url(../images/gallery/tablet2x/10-sign.jpg); }
+	.moldova-room-tables{ background: url(../images/gallery/tablet2x/11-moldova-room-tables.jpg); }
+	.green-room-banquet{ background: url(../images/gallery/tablet2x/12-green-room-banquet.jpg); }
+	.figurine{ background: url(../images/gallery/tablet2x/13-figurine.jpg); }
+	.national-costumes{ background: url(../images/gallery/tablet2x/14-national-costumes.jpg); }
+	.moldova-room-overview{ background: url(../images/gallery/tablet2x/15-moldova-room-overview.jpg); }
+	.earthenware-jar{ background: url(../images/gallery/tablet2x/16-earthenware-jar.jpg); }
+	.authentic-decor{ background: url(../images/gallery/tablet2x/17-authentic-decor.jpg); }
+	.moldova-room-banquet-preparation{ background: url(../images/gallery/tablet2x/18-moldova-room-banquet-preparation.jpg); }
+	.moldova-room-1{ background: url(../images/gallery/tablet2x/19-moldova-room-1.jpg); }
+	.green-room-1{ background: url(../images/gallery/tablet2x/20-green-room-1.jpg); }
+	.green-room-2{ background: url(../images/gallery/tablet2x/21-green-room-2.jpg); }
+	.green-room-3{ background: url(../images/gallery/tablet2x/22-green-room-3.jpg); }
+	.moldova-room-2{ background: url(../images/gallery/tablet2x/23-moldova-room-2.jpg); }
+	.moldova-room-3{ background: url(../images/gallery/tablet2x/24-moldova-room-3.jpg); }
+       	
+
+    /* Because of the 1000px max-width the width will always be 230px (and margin left/right 10px),
+    but we stick to percentage values for demo purposes. */
+    #gallery .ui-listview .ui-li.ui-btn {
+        width: 30.9333%; /* 33.3333% incl. 2 x 1.2% margin */
+		height: 232px;
+		margin: 9px 1.2%;
+    }
+}
+
+@media all and (min-width: 1020px){
+    #gallery .ui-content {
+        padding: 10px;
+    }
+    /* Set a max-width for the last breakpoint to prevent too much stretching on large screens.
+    By setting the max-width equal to the breakpoint width minus padding we keep square tiles. */
+    #gallery .ui-listview {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    /* Because of the 1000px max-width the width will always be 230px (and margin left/right 10px),
+    but we stick to percentage values for demo purposes. */
+    #gallery .ui-listview .ui-li.ui-btn {
+        width: 23%;
+        height: 230px;
+        margin: 10px 1%;
+    }
+}
+
+/*===================
+ * 
+ * Grid-listview for menu and banquet pages
+ * 
+ ====================*/
+
+.spinner{
+	background: url(images/ajax-loader.gif);
+	height: 80px;
+	width: 80px;
+	background-size: 46px 46px;
+	background-position: center center;
+	background-repeat:no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+
+.vector-icon{
+	text-align: center;
+	font-size: 4em;
+	text-shadow: 0 -1px 0 black;
+}
+
+.ui-popup-container .vector-icon{
+	font-size: 11em;
+}
+
+/* Phone HDPI */
+.photo{
+	display: block;
+	float: left;
+	height: 80px;
+	width: 80px;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;	
+}
+       
+/* Salads */
+	#Taranesc { background: url(../images/dishes/phone2x/5_01_Taranesc.jpg); }	
+	#Delicios { background: url(../images/dishes/phone2x/5_02_Delicios.jpg); }
+	#Primavara { background: url(../images/dishes/phone2x/5_03_Primavara.jpg); }
+	#Salata-cu-Carne-de-Vita { background: url(../images/dishes/phone2x/5_04_Salata-cu-Carne-de-Vita.jpg); }
+	#Salata-din-Limba { background: url(../images/dishes/phone2x/5_05_Salata-din-Limba.jpg); }
+	#Dunarea { background: url(../images/dishes/phone2x/5_06_Dunarea.jpg); }
+	#Salata-de-Varza { background: url(../images/dishes/phone2x/5_07_Salata-de-Varza.jpg); }
+	#Nistru { background: url(../images/dishes/phone2x/5_08_Nistru.jpg); }
+	#Salata-Orheiului:before { content: "\f117"; }
+	#Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }
+
+/* Cold Appetizers */
+	#Moldova { background: url(../images/dishes/phone2x/1_01_Moldova.jpg); }	
+	#Platou-din-Legume-Prajite { background: url(../images/dishes/phone2x/1_02_Legume-prajite-Platou.jpg); }
+	#Platou-de-Peste { background: url(../images/dishes/phone2x/1_03_Platou-de-Peste.jpg); }
+	#Gogoase-Picante { background: url(../images/dishes/phone2x/1_04_Gogoase-Picante.jpg); }
+	#Racituri { background: url(../images/dishes/phone2x/1_05_Racituri.jpg); }
+	#Icra-de-Vinata { background: url(../images/dishes/phone2x/1_06_Icra-de-Vinata.jpg); }
+	#Fasolita { background: url(../images/dishes/phone2x/1_07_Fasolita.jpg); }
+	#Limba-de-Vita { background: url(../images/dishes/phone2x/1_08_Limba-de-Vita.jpg); }
+	#Muschi-Bujenina { background: url(../images/dishes/phone2x/1_09_Muschi-Bujenina.jpg); }
+	#Muraturi { background: url(../images/dishes/phone2x/1_10_Muraturi.jpg); }
+	#Hering-cu-Cartofi-noi-cu-Marari { background: url(../images/dishes/phone2x/1_11_Hering-cu-Cartofi-noi-cu-Marari.jpg); }
+	#Platou-cu-Cascaval { background: url(../images/dishes/phone2x/1_12_Platou-cu-Cascaval.jpg); }
+	#Trapeza-Haiducului { background: url(../images/dishes/phone2x/1_13_Trapeza-Haiducului.jpg); }
+	#Platou-de-Carne { background: url(../images/dishes/phone2x/1_14_Platou-de-Carne.jpg); }
+
+/*  Hot Appetizers */
+	#Ursuleti { background: url(../images/dishes/phone2x/2_01_Ursuleti.jpg); }
+	#Coltunasi-Fat-Frumos { background: url(../images/dishes/phone2x/2_02_Coltunasi-Fat-Frumos.jpg); }
+	#Placinte { background: url(../images/dishes/phone2x/2_03_Placinte.jpg); }
+	#Sarmale-ca-la-Mama { background: url(../images/dishes/phone2x/2_04_Sarmale-ca-la-Mama.jpg); }
+	#Mititei { background: url(../images/dishes/phone2x/2_05_Mititei.jpg); }
+	#Carnaciori { background: url(../images/dishes/phone2x/2_06_Carnaciori.jpg); }
+	#Jumari { background: url(../images/dishes/phone2x/2_07_Jumari.jpg); }
+	#Chiperi-Umpluti:before { content: "\f117"; }
+	#Cascaval-Pane:before { content: "\f117"; }
+	#Coltunasi-Lenesi:before { content: "\f117"; }
+	
+/* Dessert */
+	#Mere-sau-Pere-Coapte { background: url(../images/dishes/phone2x/3_01_Mere-sau-Pere-Coapte.jpg); }
+	#Prune-uscate-umplute-cu-nuci { background: url(../images/dishes/phone2x/3_02_Prune-uscate-umplute-cu-nuci.jpg); }
+	#Clatite-cu-Visine { background: url(../images/dishes/phone2x/3_03_Clatite-cu-Visine.jpg); }
+	#Placinta-cu-Bostan { background: url(../images/dishes/phone2x/3_04_Placinta-cu-Bostan.jpg); }
+	#Platou-cu-Fructe { background: url(../images/dishes/phone2x/3_05_Platou-cu-Fructe.jpg); }
+	#Napoleon { background: url(../images/dishes/phone2x/3_06_Napoleon.jpg); }
+	#Dessert-Moldova { background: url(../images/dishes/phone2x/3_06_Dessert-Moldova.jpg); }
+	#Placinte-cu-Visina { background: url(../images/dishes/phone2x/3_07_Placinte-cu-Visina.jpg); }
+	#Coltunasi-cu-Visina:before { content: "\f117"; }
+	#Papanasi-prajiti:before { content: "\f117"; }
+	#Baba-Alba:before { content: "\f117"; }
+	#Baba-Neagra:before { content: "\f117"; }
+
+/* Main Entrees */
+	#Mamaliga-Trapeza { background: url(../images/dishes/phone2x/4_01_Mamaliga-Trapeza.jpg); }
+	#Costita { background: url(../images/dishes/phone2x/4_02_Costita.jpg); }
+	#Snitzel { background: url(../images/dishes/phone2x/4_03_Snitzel.jpg); }
+	#Medalion { background: url(../images/dishes/phone2x/4_04_Medalion.jpg); }
+	#Pastrav { background: url(../images/dishes/phone2x/4_05_Pastrav.jpg); }
+	#Ceafa-de-Porc { background: url(../images/dishes/phone2x/4_06_Ceafa-de-Porc.jpg); }
+	#Antricot { background: url(../images/dishes/phone2x/4_07_Antricot.jpg); }
+	#Carp { background: url(../images/dishes/phone2x/4_08_Carp.jpg); }
+	#Somon { background: url(../images/dishes/phone2x/4_09_Somon.jpg); }
+	#Ficatei-de-pui-la-tigaie { background: url(../images/dishes/phone2x/4_10_Ficatei-de-pui-la-tigaie.jpg); }
+	#Frigarui-de-Porc { background: url(../images/dishes/phone2x/4_11_Frigarui-de-Porc.jpg); }
+	#Frigarui-de-Gaina { background: url(../images/dishes/phone2x/4_12_Frigarui-de-Gaina.jpg?2); }
+	#Frigarui-de-Miel { background: url(../images/dishes/phone2x/4_13_Frigarui-de-Miel.jpg); }
+	#Costita-de-Vita { background: url(../images/dishes/phone2x/4_14_Costita-de-Vita.jpg); }
+	#Zander { background: url(../images/dishes/phone2x/4_15_Zander.jpg); }
+	#Iepure-fript { background: url(../images/dishes/phone2x/4_16_Iepure-fript.jpg); }
+	#Perjoale-ca-la-Tiraspol:before { content: "\f117"; }
+	#Pui-la-Gratar { background: url(../images/dishes/phone2x/4_18_Pui-la-Gratar.jpg); }
+	#Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }
+	#Friptura-de-meil-Ciulama { background: url(../images/dishes/phone2x/4_20_Friptura-de-meil-Ciulama.jpg); }
+	#Muschi-de-porc-la-gratar:before { content: "\f117"; }
+	#Snitel-de-porc-in-still-francez:before { content: "\f117"; }
+	
+/* Soups */
+	#Zeama { background: url(../images/dishes/phone2x/6_01_Zeama.jpg); }
+	#Ciorba-de-Vita-cu-Fasole { background: url(../images/dishes/phone2x/6_02_Ciorba-de-Vita-cu-Fasole.jpg); }
+	#Ciorba-de-Perisoare { background: url(../images/dishes/phone2x/6_03_Ciorba-de-Perisoare.jpg); }
+	#Ciorba-de-Burta { background: url(../images/dishes/phone2x/6_04_Ciorba-de-Burta.jpg); }
+	#Bors-Rosu { background: url(../images/dishes/phone2x/6_05_Bors-Rosu.jpg); }
+	#Ciorba-de-Peste:before { content: "\f117"; }
+	
+/* Side Dishes */
+	#Mamaliga { background: url(../images/dishes/phone2x/7_01_Mamaliga.jpg); }
+	#Cartofi-ca-Acasa { background: url(../images/dishes/phone2x/7_02_Cartofi-ca-Acasa.jpg); }
+	#Taitei { background: url(../images/dishes/phone2x/7_03_Taitei.jpg); }
+	#Pilaf { background: url(../images/dishes/phone2x/7_04_Pilaf.jpg); }
+	#Cartofi-Tocati { background: url(../images/dishes/phone2x/7_05_Cartofi-Tocati.jpg); }
+	#Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
+	#Porumb-dulce-la-grill:before { content: "\f117"; }
+	
+/* Mix plates */
+	#Mititei-Carnaciori { background: url(../images/dishes/phone2x/_Mititei-Carnaciori.jpg); }
+
+
+/* First breakpoint is 768px. 3 column layout. Tiles 250x250 pixels at the breakpoint. */
+@media all and (min-width: 768px){
+
+	.spinner {
+		height: 100%;
+		width: 100%;
+		float: none;
+	}
+
+	.vector-icon {
+		font-size: 13em;
+	}
+
+	.ui-li-has-count .ui-li-count {
+		top: 88%;
+	}
+
+	.grid-listview .ui-listview .ui-li.ui-btn {
+		background-image: none;
+		border-color: #222;
+	}
+
+	.grid-listview .ui-content {
+		padding: 9px;
+	}
+	
+	.grid-listview .ui-listview .ui-li.ui-btn {
+		float: left;
+		width: 30.9333%; /* 33.3333% incl. 2 x 1.2% margin */
+		height: 232px;
+		margin: 9px 1.2%;
+		border-width: 0; /* The 1px border would break the layout so we set it on .ui-btn-inner instead. */
+	}
+	/* If you don't want a border at all, just set "border: none;" here to negate the semi white top border */
+	.grid-listview .ui-listview .ui-li.ui-btn-inner {
+		border: inherit;
+		border-width: 1px;
+		margin: -1px;
+	}
+	.grid-listview .ui-listview .ui-btn-inner,
+	.grid-listview .ui-listview .ui-btn-text,
+	.grid-listview .ui-listview .ui-link-inherit,
+	.grid-listview .ui-listview .ui-li-thumb,
+	.grid-listview .ui-listview .photo {
+		width: 100%;
+		height: 100%;
+		display: block;
+		overflow: hidden;
+	}
+	.grid-listview .ui-listview .ui-link-inherit {
+		padding: 0 !important;
+		position: relative;
+	}
+	/* Inherit the border-radius from the UL that has class .ui-corner-all in case of an inset listview. */
+	.grid-listview .ui-listview .ui-li:not([data-role="list-divider"]),
+	.grid-listview .ui-listview .ui-btn-text,
+	.grid-listview .ui-listview .ui-link-inherit,
+	.grid-listview .ui-listview .ui-li-thumb,
+	.grid-listview .ui-listview .photo {
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+	}
+	.grid-listview .ui-listview .ui-li-thumb {
+		height: auto; /* To keep aspect ratio. */
+		max-width: 100%;
+		max-height: none;
+		margin: 0;
+		left: 0;
+		z-index: -1;
+	}
+	
+	.photo{
+		background: none;
+		height: auto;
+		max-width: 100%;
+		max-height: none;
+		margin: 0;
+		left: 0;
+		z-index: -1;
+	}
+	
+/* Tablet HDPI */	
+
+/* Salads */
+	#Taranesc { background: url(../images/dishes/tablet2x/5_01_Taranesc.jpg); }	
+	#Delicios { background: url(../images/dishes/tablet2x/5_02_Delicios.jpg); }
+	#Primavara { background: url(../images/dishes/tablet2x/5_03_Primavara.jpg); }
+	#Salata-cu-Carne-de-Vita { background: url(../images/dishes/tablet2x/5_04_Salata-cu-Carne-de-Vita.jpg); }
+	#Salata-din-Limba { background: url(../images/dishes/tablet2x/5_05_Salata-din-Limba.jpg); }
+	#Dunarea { background: url(../images/dishes/tablet2x/5_06_Dunarea.jpg); }
+	#Salata-de-Varza { background: url(../images/dishes/tablet2x/5_07_Salata-de-Varza.jpg); }
+	#Nistru { background: url(../images/dishes/tablet2x/5_08_Nistru.jpg); }
+	#Salata-Orheiului:before { content: "\f117"; }
+	#Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }
+	
+/* Cold Appetizers */
+	#Moldova { background: url(../images/dishes/tablet2x/1_01_Moldova.jpg); }	
+	#Platou-din-Legume-Prajite { background: url(../images/dishes/tablet2x/1_02_Legume-prajite-Platou.jpg); }
+	#Platou-de-Peste { background: url(../images/dishes/tablet2x/1_03_Platou-de-Peste.jpg); }
+	#Gogoase-Picante { background: url(../images/dishes/tablet2x/1_04_Gogoase-Picante.jpg); }
+	#Racituri { background: url(../images/dishes/tablet2x/1_05_Racituri.jpg); }
+	#Icra-de-Vinata { background: url(../images/dishes/tablet2x/1_06_Icra-de-Vinata.jpg); }
+	#Fasolita { background: url(../images/dishes/tablet2x/1_07_Fasolita.jpg); }
+	#Limba-de-Vita { background: url(../images/dishes/tablet2x/1_08_Limba-de-Vita.jpg); }
+	#Muschi-Bujenina { background: url(../images/dishes/tablet2x/1_09_Muschi-Bujenina.jpg); }
+	#Muraturi { background: url(../images/dishes/tablet2x/1_10_Muraturi.jpg); }
+	#Hering-cu-Cartofi-noi-cu-Marari { background: url(../images/dishes/tablet2x/1_11_Hering-cu-Cartofi-noi-cu-Marari.jpg); }
+	#Platou-cu-Cascaval { background: url(../images/dishes/tablet2x/1_12_Platou-cu-Cascaval.jpg); }
+	#Trapeza-Haiducului { background: url(../images/dishes/tablet2x/1_13_Trapeza-Haiducului.jpg); }
+	#Platou-de-Carne { background: url(../images/dishes/tablet2x/1_14_Platou-de-Carne.jpg); }
+
+/*  Hot Appetizers */
+	#Ursuleti { background: url(../images/dishes/tablet2x/2_01_Ursuleti.jpg); }
+	#Coltunasi-Fat-Frumos { background: url(../images/dishes/tablet2x/2_02_Coltunasi-Fat-Frumos.jpg); }
+	#Placinte { background: url(../images/dishes/tablet2x/2_03_Placinte.jpg); }
+	#Sarmale-ca-la-Mama { background: url(../images/dishes/tablet2x/2_04_Sarmale-ca-la-Mama.jpg); }
+	#Mititei { background: url(../images/dishes/tablet2x/2_05_Mititei.jpg); }
+	#Carnaciori { background: url(../images/dishes/tablet2x/2_06_Carnaciori.jpg); }
+	#Jumari { background: url(../images/dishes/tablet2x/2_07_Jumari.jpg); }
+	#Chiperi-Umpluti:before { content: "\f117"; }
+	#Cascaval-Pane:before { content: "\f117"; }
+	#Coltunasi-Lenesi:before { content: "\f117"; }
+	
+/* Dessert */
+	#Mere-sau-Pere-Coapte { background: url(../images/dishes/tablet2x/3_01_Mere-sau-Pere-Coapte.jpg); }
+	#Prune-uscate-umplute-cu-nuci { background: url(../images/dishes/tablet2x/3_02_Prune-uscate-umplute-cu-nuci.jpg); }
+	#Clatite-cu-Visine { background: url(../images/dishes/tablet2x/3_03_Clatite-cu-Visine.jpg); }
+	#Placinta-cu-Bostan { background: url(../images/dishes/tablet2x/3_04_Placinta-cu-Bostan.jpg); }
+	#Platou-cu-Fructe { background: url(../images/dishes/tablet2x/3_05_Platou-cu-Fructe.jpg); }
+	#Napoleon { background: url(../images/dishes/tablet2x/3_06_Napoleon.jpg); }
+	#Dessert-Moldova { background: url(../images/dishes/tablet2x/3_06_Dessert-Moldova.jpg); }
+	#Placinte-cu-Visina { background: url(../images/dishes/tablet2x/3_07_Placinte-cu-Visina.jpg); }
+	#Coltunasi-cu-Visina:before { content: "\f117"; }
+	#Papanasi-prajiti:before { content: "\f117"; }
+	#Baba-Alba:before { content: "\f117"; }
+	#Baba-Neagra:before { content: "\f117"; }
+	
+/* Main Entrees */
+	#Mamaliga-Trapeza { background: url(../images/dishes/tablet2x/4_01_Mamaliga-Trapeza.jpg); }
+	#Costita { background: url(../images/dishes/tablet2x/4_02_Costita.jpg); }
+	#Snitzel { background: url(../images/dishes/tablet2x/4_03_Snitzel.jpg); }
+	#Medalion { background: url(../images/dishes/tablet2x/4_04_Medalion.jpg); }
+	#Pastrav { background: url(../images/dishes/tablet2x/4_05_Pastrav.jpg); }
+	#Ceafa-de-Porc { background: url(../images/dishes/tablet2x/4_06_Ceafa-de-Porc.jpg); }
+	#Antricot { background: url(../images/dishes/tablet2x/4_07_Antricot.jpg); }
+	#Carp { background: url(../images/dishes/tablet2x/4_08_Carp.jpg); }
+	#Somon { background: url(../images/dishes/tablet2x/4_09_Somon.jpg); }
+	#Ficatei-de-pui-la-tigaie { background: url(../images/dishes/tablet2x/4_10_Ficatei-de-pui-la-tigaie.jpg); }
+	#Frigarui-de-Porc { background: url(../images/dishes/tablet2x/4_11_Frigarui-de-Porc.jpg); }
+	#Frigarui-de-Gaina { background: url(../images/dishes/tablet2x/4_12_Frigarui-de-Gaina.jpg?2); }
+	#Frigarui-de-Miel { background: url(../images/dishes/tablet2x/4_13_Frigarui-de-Miel.jpg); }
+	#Costita-de-Vita { background: url(../images/dishes/tablet2x/4_14_Costita-de-Vita.jpg); }
+	#Zander { background: url(../images/dishes/tablet2x/4_15_Zander.jpg); }
+	#Iepure-fript { background: url(../images/dishes/tablet2x/4_16_Iepure-fript.jpg); }
+	#Perjoale-ca-la-Tiraspol:before { content: "\f117"; }
+	#Pui-la-Gratar { background: url(../images/dishes/tablet2x/4_18_Pui-la-Gratar.jpg); }
+	#Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }
+	#Friptura-de-meil-Ciulama { background: url(../images/dishes/tablet2x/4_20_Friptura-de-meil-Ciulama.jpg); }
+	#Muschi-de-porc-la-gratar:before { content: "\f117"; }
+	#Snitel-de-porc-in-still-francez:before { content: "\f117"; }
+
+/* Soups */
+	#Zeama { background: url(../images/dishes/tablet2x/6_01_Zeama.jpg); }
+	#Ciorba-de-Vita-cu-Fasole { background: url(../images/dishes/tablet2x/6_02_Ciorba-de-Vita-cu-Fasole.jpg); }
+	#Ciorba-de-Perisoare { background: url(../images/dishes/tablet2x/6_03_Ciorba-de-Perisoare.jpg); }
+	#Ciorba-de-Burta { background: url(../images/dishes/tablet2x/6_04_Ciorba-de-Burta.jpg); }
+	#Bors-Rosu { background: url(../images/dishes/tablet2x/6_05_Bors-Rosu.jpg); }
+	#Ciorba-de-Peste:before { content: "\f117"; }
+	
+/* Side Dishes */
+	#Mamaliga { background: url(../images/dishes/tablet2x/7_01_Mamaliga.jpg); }
+	#Cartofi-ca-Acasa { background: url(../images/dishes/tablet2x/7_02_Cartofi-ca-Acasa.jpg); }
+	#Taitei { background: url(../images/dishes/tablet2x/7_03_Taitei.jpg); }
+	#Pilaf { background: url(../images/dishes/tablet2x/7_04_Pilaf.jpg); }
+	#Cartofi-Tocati { background: url(../images/dishes/tablet2x/7_05_Cartofi-Tocati.jpg); }
+	#Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
+	#Porumb-dulce-la-grill:before { content: "\f117"; }	
+
+/* Mix plates */
+	#Mititei-Carnaciori { background: url(../images/dishes/tablet2x/_Mititei-Carnaciori.jpg); }
+
+
+
+	/* Hide the icon */
+	.grid-listview .ui-listview .ui-icon {
+		display: none;
+	}
+	/* Make text wrap. */
+	.grid-listview .ui-listview .ui-li-heading,
+	.grid-listview .ui-listview .ui-li-desc {
+		white-space: normal;
+		overflow: visible;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	/* Text position */
+	.grid-listview .ui-listview .ui-li-heading {
+		margin: 0;
+		padding: 20px;
+	}
+	.grid-listview .ui-listview .ui-li-desc {
+		margin: 0;
+		padding: 0 20px;
+		min-height: 50%;
+		bottom: 0;
+		line-height: 1.5;
+		display: none;
+	}
+	/* Semi transparent background and different position if there is a thumb */
+	.ui-listview .ui-li-heading,
+	.ui-listview .ui-li-desc {
+		background: #111;
+		background: rgba(0,0,0,.5);
+		-webkit-background-clip: padding;
+		background-clip: padding-box;
+	}
+	.ui-listview .ui-li-heading {
+		bottom: 0;
+		color: white;
+		height: 17%;
+		padding: 10px;
+		text-shadow: 0 1px 0 #000;
+	}
+	.ui-listview .ui-li-desc {
+		padding: 0 10px;
+		min-height: 20%;
+		-webkit-border-bottom-left-radius: inherit;
+		border-bottom-left-radius: inherit;
+		-webkit-border-bottom-right-radius: inherit;
+		border-bottom-right-radius: inherit;
+	}
+	/* ui-li-aside has class .ui-li-desc as well so we have to override some things. */
+	.grid-listview .ui-listview .ui-li-desc.ui-li-aside {
+		padding: 2px 10px;
+		width: auto;
+		min-height: 0;
+		top: 0;
+		left: auto;
+		bottom: auto;
+		/* Custom styling. */
+		color: #c0c0c0;
+		background: #990099;
+		background: rgba(153,0,153,.85);
+		-webkit-border-top-right-radius: inherit;
+		border-top-right-radius: inherit;
+		-webkit-border-bottom-left-radius: inherit;
+		border-bottom-left-radius: inherit;
+		-webkit-border-bottom-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	/* If you want to add shadow, don't kill the focus style. */ 
+	.grid-listview .ui-listview .ui-btn:not(.ui-focus) {
+		-moz-box-shadow: 0px 0px 9px #111;
+		-webkit-box-shadow: 0px 0px 9px #111;
+		box-shadow: 0px 0px 9px #111;
+	}
+	/* Images mask the hover bg color so we give desktop users feedback by applying the focus style on hover as well. */
+	.grid-listview .ui-listview .ui-btn:hover {
+		-moz-box-shadow: 0px 0px 12px #387bbe;
+		-webkit-box-shadow: 0px 0px 12px #387bbe;
+		box-shadow: 0px 0px 12px #387bbe;
+	}
+	/* Animate focus and hover style, and resizing. */ 
+	.grid-listview .ui-listview .ui-btn {
+		-webkit-transition: all 500ms ease;
+		-moz-transition: all 500ms ease;
+		-o-transition: all 500ms ease;
+		-ms-transition: all 500ms ease;
+		transition: all 500ms ease;	
+	}
+}
+/* Second breakpoint. 4 column layout. Tiles will be 250x250 pixels again at the breakpoint. */
+@media all and (min-width: 1020px){
+	.grid-listview .ui-content {
+		padding: 10px;
+	}
+	/* Set a max-width for the last breakpoint to prevent too much stretching on large screens.
+	By setting the max-width equal to the breakpoint width minus padding we keep square tiles. */
+	.grid-listview .ui-listview {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	/* Because of the 1000px max-width the width will always be 230px (and margin left/right 10px),
+	but we stick to percentage values for demo purposes. */
+	.grid-listview .ui-listview .ui-li.ui-btn {
+		width: 23%;
+		height: 230px;
+		margin: 10px 1%;
+	}
+}
+
+/* For this demo we used images with a size of 310x310 pixels. Just before the second breakpoint the images reach their max width: 1019px - 2 x 9px padding = 1001px x 30.9333% = ~310px */

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+    <url>
+        <loc>http://m.moldaviancuisine.com/index.html</loc>
+        <mobile:mobile/>
+    </url>
+    <url>
+        <loc>http://m.moldaviancuisine.com/about-us.html</loc>
+        <mobile:mobile/>
+    </url>
+    <url>
+        <loc>http://m.moldaviancuisine.com/testimonials.html</loc>
+        <mobile:mobile/>
+    </url>
+    <url>
+        <loc>http://m.moldaviancuisine.com/contact.html</loc>
+        <mobile:mobile/>
+    </url>
+    <url>
+        <loc>http://m.moldaviancuisine.com/gallery.html</loc>
+        <mobile:mobile/>
+    </url>    
+    <url>
+        <loc>http://m.moldaviancuisine.com/menu.html</loc>
+        <mobile:mobile/>
+    </url>            
+    <url>
+        <loc>http://m.moldaviancuisine.com/banquet.html</loc>
+        <mobile:mobile/>
+    </url>
+    <url>
+        <loc>http://m.moldaviancuisine.com/lunch.html</loc>
+        <mobile:mobile/>
+    </url>
+</urlset>
