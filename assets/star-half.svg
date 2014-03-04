@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="64"
+   height="64"
+   viewBox="5.5 -3.5 64 64"
+   id="Layer_1"
+   xml:space="preserve"><metadata
+   id="metadata13"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs11" />
+
+<g
+   transform="matrix(0.03806769,0,0,-0.03806769,5.8535534,55.638906)"
+   id="g3202"><path
+     d="M 832,1504 V 165 L 383,-71 q -22,-12 -40,-12 -21,0 -31.5,14.5 Q 301,-54 301,-33 q 0,6 2,20 L 389,487 25,841 q -25,27 -25,48 0,37 56,46 l 502,73 225,455 q 19,41 49,41 z"
+     id="path3204"
+     style="fill:currentColor" /></g></svg>

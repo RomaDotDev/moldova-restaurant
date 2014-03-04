@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="64"
+   height="64"
+   viewBox="5.5 -3.5 64 64"
+   id="Layer_1"
+   xml:space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="juice.svg"><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview7"
+   showgrid="false"
+   inkscape:zoom="3.6875"
+   inkscape:cx="60.399811"
+   inkscape:cy="18.509315"
+   inkscape:window-x="2105"
+   inkscape:window-y="469"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" /><metadata
+   id="metadata13"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+   id="defs11" />
+
+<g
+   id="g2985"
+   transform="matrix(0.0662051,0,0,-0.0662051,3.4963943,58.303691)"><path
+     id="path2987"
+     d="m 737.76,675.008 c 17.824,0 32.256,-14.432 32.256,-32.256 L 711.552,-0.224 c 0,-17.824 -14.432,-32.256 -32.256,-32.256 l -334.624,-1.5e-5 c -17.824,0 -32.256,14.432 -32.256,32.25599974 L 254.016,642.75198 c 0,17.824 14.432,32.256 32.256,32.256 h 288.32 l 34.112,173.952 154.848,79.52 -11.136,-41.536 -114.944,-57.632 -30.016,-154.304 H 737.76 z M 560.448,449.248 H 689.376 L 653.088,32.032 H 370.912 L 334.624,449.248 H 527.552 L 567.84,642.752 H 286.24 L 344.672,-0.224 h 334.592 l 58.464,642.976 H 600.704 z"
+     inkscape:connector-curvature="0"
+     style="fill:currentColor" /></g></svg>
