@@ -377,12 +377,10 @@ a[data-icon="delete"] .ui-btn-inner, a[data-icon="reorder"] .ui-btn-inner{
 }
 
 #menu_footer{
-	display: block;
-	clear: both;
-	padding: 10px;
-	margin: 0 auto;
-	width: 250px;
-	height: 32px;				
+  clear: both;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;		
 }
 
 #menu_footer a{
@@ -391,6 +389,10 @@ a[data-icon="delete"] .ui-btn-inner, a[data-icon="reorder"] .ui-btn-inner{
 	padding: .5em;
 }
 
+#menu_footer a:after{
+  width: 1.8em;
+  height: 1.8em;
+}
 
 /*===================
  * 
