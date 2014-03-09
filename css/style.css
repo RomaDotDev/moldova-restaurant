@@ -13,39 +13,10 @@ div [data-role="content"]{
 	max-width: 1050px;
 }
 
-.ui-header .ui-title {
-	margin: .6em 10% .8em;
+.ui-btn-icon-notext{
+  background: none!important;
+  border: none;
 }
-
-.ui-btn-icon-right > .ui-btn-inner > .ui-icon{
-	right: 5px;
-}
-
-#menu .ui-btn-icon-right > .ui-btn-inner > .ui-icon{
-	margin-top: 4px;
-}
-
-.ui-li-has-arrow.ui-li-has-count .ui-li-count {
-	right: 10px;
-	top: 20px;
-}
-
-.ui-li-has-arrow.ui-li-has-count .ui-btn-inner a.ui-link-inherit{
-	padding: 0 35px 0 0;
-}
-
-.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit{
-	padding-left: 90px;
-}
-
-div [data-role="content"] .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
-	padding: 0 25px 0 0;
-}
-
-#menu .ui-content, #banquet .ui-content{
-	padding-top: 0;
-}
-
 
 .ui-btn-icon-left:after, 
 .ui-btn-icon-right:after, 
@@ -314,26 +285,13 @@ div [data-role="content"] .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.
 */
 
 /* Customisation for close menu and close icons */
-/*
-a[data-icon="delete"], a[data-icon="reorder"]{
-	background: none;
-	border: none;
-	padding: .5em;
+
+.ui-icon-reorder{
+  margin-top: -.3em!important;
+  padding: .5em!important;
 }
 
-a[data-icon="reorder"]{
-	margin-top: -.2em!important;	
-}
 
-a[data-icon="delete"]{
-	margin: .5em .5em!important;
-}
-
-a[data-icon="delete"] .ui-btn-inner, a[data-icon="reorder"] .ui-btn-inner{
-	border: none;
-	border-radius: 0!important;
-}
-*/
 
 /*===================
  * 
@@ -384,8 +342,6 @@ a[data-icon="delete"] .ui-btn-inner, a[data-icon="reorder"] .ui-btn-inner{
 }
 
 #menu_footer a{
-  background: none;
-  border: none;
 	padding: .5em;
 }
 
