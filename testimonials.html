@@ -16,10 +16,6 @@
 		<link rel="stylesheet" href="css/jquery.mobile.min.css?v1" />
 		<link rel="stylesheet" href="css/style.css?v2" />
 		
-		<script src="js/vendor/jquery.min.js?v1"></script>
-		<script src="js/vendor/jquery.mobile.min.js?v1"></script>
-		<script type="text/javascript" src="js/oauth.js?v1"></script>
-		<script type="text/javascript" src="js/sha1.js?v1"></script>
 		<script type="text/javascript">
 		
 		  var _gaq = _gaq || [];
@@ -32,71 +28,16 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
+    </script>
 
-			var auth = { 
-			  //
-			  // Update with your auth tokens
-			  //
-			  consumerKey: "ZEBDadoBfiMs1HlmcLlHyQ",
-			  consumerSecret: "cXnSPxRVp0h8QgcR6dYkzJZ0nU8",
-			  accessToken: "AKZEJqPxwE44oRwOJUKxiApsWexIGeXA",
-			  // This example is a proof of concept, for how to use the Yelp v2 API with javascript.
-			  // You wouldn't actually want to expose your access token secret like this in a real application.
-			  accessTokenSecret: "oidE1uQEkuQkS07wRC5YgPwDPYY",
-			  serviceProvider: { 
-			    signatureMethod: "HMAC-SHA1"
-			  }
-			};
-			
-			var accessor = {
-			  consumerSecret: auth.consumerSecret,
-			  tokenSecret: auth.accessTokenSecret
-			};
-			
-			parameters = [];
-			parameters.push(['callback', 'cb']);
-			parameters.push(['oauth_consumer_key', auth.consumerKey]);
-			parameters.push(['oauth_consumer_secret', auth.consumerSecret]);
-			parameters.push(['oauth_token', auth.accessToken]);
-			parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
-			
-			var message = { 
-			  'action': 'http://api.yelp.com/v2/business/moldova-restaurant-brooklyn',
-			  'method': 'GET',
-			  'parameters': parameters 
-			};
-			
-			OAuth.setTimestampAndNonce(message);
-			OAuth.SignatureMethod.sign(message, accessor);
-			
-			var parameterMap = OAuth.getParameterMap(message.parameters);
-			parameterMap.oauth_signature = OAuth.percentEncode(parameterMap.oauth_signature)
-			
-			$.ajax({
-			  'url': message.action,
-			  'data': parameterMap,
-			  'cache': true,
-			  'dataType': 'jsonp',
-			  'jsonpCallback': 'cb',
-			  'success': function(data, textStats, XMLHttpRequest) {
-			    $('#yelpRating').prepend(
-			    	'<a rel="nofollow" href="' + data.url + '" target="_blank">'
-					+ '<img width="78" height="40" src="http://s3-media3.ak.yelpcdn.com/assets/2/www/img/2d7ab232224f/developers/yelp_logo_100x50.png" alt="Moldova Restaurant on Yelp">'
-			    	+ '<img width="111" height="20" src="' + data.rating_img_url_large + '" alt="Moldova Restaurant Yelp rating is ' + data.rating + '">'
-			    	+ '</a>'
-			    	+ '<p>based on ' + data.review_count + ' reviews</p>'
-			    );
-			  }
-			});
-		</script>
 
 	</head>
 	<body>
 
 
-		<div data-role="page" class="type-interior" id="testimonials">
+		<div data-role="page" class="type-interior jqm-page" id="testimonials">
 
-			<div data-role="panel" id="menupanel" data-theme="g">
+			<div id="menupanel" class="jqm-navmenu-panel" data-role="panel" data-position="left" data-display="overlay">
 				<ul data-role="listview" data-theme="g" data-divider-theme="g">
 					<li data-role="list-divider">Menus</li>
 					<li data-icon="lunch"><a href="menu.html" rel="external">Casual Menu</a></li>
@@ -113,10 +54,10 @@
 
 			<div data-role="header" data-position="fixed">
 				<h1>Testimonials</h1>
-				<a href="#menupanel" class="ui-btn ui-icon-reorder ui-btn-icon-notext">Menu</a>
+				<a href="#menupanel" class="menu-btn ui-btn ui-icon-reorder ui-btn-icon-notext">Menu</a>
 			</div><!-- /header -->
 
-			<div data-role="content">
+			<div role="main" class="jqm-content">
 				
 				<div itemscope="" itemtype="http://schema.org/Restaurant">
 					<meta itemprop="name" content="Moldova Restaurant Brooklyn">
@@ -391,7 +332,7 @@
 				</div>
 			</div><!-- /content -->
 
-			<div data-role="footer" class="pagefooter">
+			<div class="pagefooter jqm-footer" data-role="footer" data-position="fixed" data-tap-toggle="false">
         <p id="menu_footer">
           <a rel="nofollow" target="_blank" href="http://m.yelp.com/biz/moldova-restaurant-brooklyn" class="ui-btn ui-icon-yelp ui-btn-icon-notext">Yelp</a>
           <a rel="nofollow" target="_blank" href="https://m.facebook.com/moldovarestaurant" class="ui-btn ui-icon-facebook ui-btn-icon-notext">Facebook</a>
@@ -428,6 +369,67 @@
 			
 		</div><!-- /page -->
 
-
+    <script src="js/vendor/jquery.min.js?v1"></script>
+    <script src="js/vendor/jquery.mobile.min.js?v1"></script>
+    <script type="text/javascript" src="js/oauth.js?v1"></script>
+    <script type="text/javascript" src="js/sha1.js?v1"></script>
+    <script>
+      var auth = { 
+        //
+        // Update with your auth tokens
+        //
+        consumerKey: "ZEBDadoBfiMs1HlmcLlHyQ",
+        consumerSecret: "cXnSPxRVp0h8QgcR6dYkzJZ0nU8",
+        accessToken: "AKZEJqPxwE44oRwOJUKxiApsWexIGeXA",
+        // This example is a proof of concept, for how to use the Yelp v2 API with javascript.
+        // You wouldn't actually want to expose your access token secret like this in a real application.
+        accessTokenSecret: "oidE1uQEkuQkS07wRC5YgPwDPYY",
+        serviceProvider: { 
+          signatureMethod: "HMAC-SHA1"
+        }
+      };
+      
+      var accessor = {
+        consumerSecret: auth.consumerSecret,
+        tokenSecret: auth.accessTokenSecret
+      };
+      
+      parameters = [];
+      parameters.push(['callback', 'cb']);
+      parameters.push(['oauth_consumer_key', auth.consumerKey]);
+      parameters.push(['oauth_consumer_secret', auth.consumerSecret]);
+      parameters.push(['oauth_token', auth.accessToken]);
+      parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
+      
+      var message = { 
+        'action': 'http://api.yelp.com/v2/business/moldova-restaurant-brooklyn',
+        'method': 'GET',
+        'parameters': parameters 
+      };
+      
+      OAuth.setTimestampAndNonce(message);
+      OAuth.SignatureMethod.sign(message, accessor);
+      
+      var parameterMap = OAuth.getParameterMap(message.parameters);
+      parameterMap.oauth_signature = OAuth.percentEncode(parameterMap.oauth_signature)
+      
+      $.ajax({
+        'url': message.action,
+        'data': parameterMap,
+        'cache': true,
+        'dataType': 'jsonp',
+        'jsonpCallback': 'cb',
+        'success': function(data, textStats, XMLHttpRequest) {
+          $('#yelpRating').prepend(
+            '<a rel="nofollow" href="' + data.url + '" target="_blank">'
+          + '<img width="78" height="40" src="http://s3-media3.ak.yelpcdn.com/assets/2/www/img/2d7ab232224f/developers/yelp_logo_100x50.png" alt="Moldova Restaurant on Yelp">'
+            + '<img width="111" height="20" src="' + data.rating_img_url_large + '" alt="Moldova Restaurant Yelp rating is ' + data.rating + '">'
+            + '</a>'
+            + '<p>based on ' + data.review_count + ' reviews</p>'
+          );
+        }
+      });
+    </script>    
+    
 	</body>
 </html>

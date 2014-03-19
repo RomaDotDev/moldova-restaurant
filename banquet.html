@@ -16,8 +16,6 @@
 		<link rel="stylesheet" href="css/jquery.mobile.min.css?v1" />
 		<link rel="stylesheet" href="css/style.css?v2" />
 
-		<script src="js/vendor/jquery.min.js?v1"></script>
-		<script src="js/vendor/jquery.mobile.min.js?v1"></script>
 		<script type="text/javascript">
 		
 		  var _gaq = _gaq || [];
@@ -30,74 +28,14 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-
-			
-			$( document ).on( "pageinit", "#banquet", function() {
-			
-			    $( "li" ).on( "click", function() {
-
-				        var descriptions = this.querySelectorAll('p'),
-				            descriptionEn = descriptions[0].innerText,
-				            descriptionRus = descriptions[1].innerText,
-				            title = this.querySelector('h3').innerText,
-				            spinnerDiv = this.querySelector('.spinner div'),
-				            short = spinnerDiv.id;
-				            
-				            closebtn = '<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-btn-right">Close</a>',
-				            header = '<div class="ui-corner-top" data-role="header"><h2>' + title + '</h2></div>';
-				            
-				            var img = '';
-				            if ( spinnerDiv.className == 'photo' ){
-				            	img = '<img src="images/dishes/full/' + short + '.jpg?v1" alt="' + title + '" class="photo" style="background-image: url(css/images/ajax-loader.gif); background-size: 46px 46px!important; max-height:' + ($(window).height() - 80) + 'px; background-position: center center;">';
-				            }
-				            else{
-				            	img = '<div class="vector-icon" style="width:' + ($(window).width() - 32) + 'px;" id="' + short + '"></div>';
-				            }
-// TODO: fix drink popup width on wide screens 
-				            
-				            var popup = '<div id="popup-' + short + '" data-role="popup" data-theme="a" data-overlay-theme="a" class="ui-corner-all" data-tolerance="15">' + closebtn + header + img + '<p>' + descriptionEn + '</p><p>' + descriptionRus + '</p></div>';
-	
-			      		
-			        // Create the popup. Trigger "pagecreate" instead of "create" because currently the framework doesn't bind the enhancement of toolbars to the "create" event (js/widgets/page.sections.js).
-			        $.mobile.activePage.append( popup ).trigger( "pagecreate" );
-			        // Wait with opening the popup until the popup image has been loaded in the DOM.
-			        // This ensures the popup gets the correct size and position
-			        $( ".photo", "#popup-" + short ).load(function() {
-			            var height = $( this ).height(),
-			                width = $( this ).width();
-			            // Set height and width attribute of the image
-			            $( this ).attr({ "height": height, "width": width });
-			            // Open the popup
-			            $( "#popup-" + short ).popup( "open" );
-			            // Clear the fallback
-			            clearTimeout( fallback );
-			        });
-			        // Fallback in case the browser doesn't fire a load event
-			        var fallback = setTimeout(function() {
-			            $( "#popup-" + short ).popup( "open" );
-			        }, 1000);
-			    });
-			    // Set a max-height to make large images shrink to fit the screen.
-			    $( document ).on( "popupbeforeposition", ".ui-popup", function() {
-			        // 68px: 2 * 15px for top/bottom tolerance, 38px for the header.
-			        var maxHeight = $( window ).height() - 68 + "px";
-			        $( "img.photo", this ).css( "max-height", maxHeight );
-			    });
-			    // Remove the popup after it has been closed to manage DOM size
-			    $( document ).on( "popupafterclose", ".ui-popup", function() {
-			        $( this ).remove();
-			    });
-			
-			});
-			
-		</script>
+    </script>
 
 	</head>
 	<body>
 
-		<div data-role="page" class="type-interior" id="banquet">
+		<div data-role="page" class="type-interior jqm-page" id="banquet">
 
-			<div data-role="panel" id="menupanel" data-theme="g">
+			<div id="menupanel" class="jqm-navmenu-panel" data-role="panel" data-position="left" data-display="overlay">
 				<ul data-role="listview" data-theme="g" data-divider-theme="g">
 					<li data-role="list-divider">Menus</li>
 					<li data-icon="food"><a href="menu.html" rel="external">Casual Menu</a></li>
@@ -114,10 +52,10 @@
 
 			<div data-role="header" data-position="fixed">
 				<h1>Banquet Menu</h1>
-				<a href="#menupanel" class="ui-btn ui-icon-reorder ui-btn-icon-notext">Menu</a>
+				<a href="#menupanel" class="menu-btn ui-btn ui-icon-reorder ui-btn-icon-notext">Menu</a>
 			</div><!-- /header -->
 
-			<div data-role="content" class="grid-listview">
+			<div  role="main" class="grid-listview jqm-content">
 
 				<h2>Banquet "Moldova"</h2>
 				<p><sup>*</sup>$60 + NY tax and service charges</p>	
@@ -682,7 +620,7 @@
 				
 			</div><!-- /content -->
 
-			<div data-role="footer" class="pagefooter">
+			<div class="pagefooter jqm-footer" data-role="footer" data-position="fixed" data-tap-toggle="false">
         <p id="menu_footer">
           <a rel="nofollow" target="_blank" href="http://m.yelp.com/biz/moldova-restaurant-brooklyn" class="ui-btn ui-icon-yelp ui-btn-icon-notext">Yelp</a>
           <a rel="nofollow" target="_blank" href="https://m.facebook.com/moldovarestaurant" class="ui-btn ui-icon-facebook ui-btn-icon-notext">Facebook</a>
@@ -718,6 +656,69 @@
 			
 		</div><!-- /page -->
 
+    <script src="js/vendor/jquery.min.js?v1"></script>
+    <script src="js/vendor/jquery.mobile.min.js?v1"></script>
+    <script>
+      
+      $( document ).on( "pageinit", "#banquet", function() {
+      
+          $( "li" ).on( "click", function() {
+
+                var descriptions = this.querySelectorAll('p'),
+                    descriptionEn = descriptions[0].innerText,
+                    descriptionRus = descriptions[1].innerText,
+                    title = this.querySelector('h3').innerText,
+                    spinnerDiv = this.querySelector('.spinner div'),
+                    short = spinnerDiv.id;
+                    
+                    closebtn = '<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-btn-right">Close</a>',
+                    header = '<div class="ui-corner-top" data-role="header"><h2>' + title + '</h2></div>';
+                    
+                    var img = '';
+                    if ( spinnerDiv.className == 'photo' ){
+                      img = '<img src="images/dishes/full/' + short + '.jpg?v1" alt="' + title + '" class="photo" style="background-image: url(css/images/ajax-loader.gif); background-size: 46px 46px!important; max-height:' + ($(window).height() - 80) + 'px; background-position: center center;">';
+                    }
+                    else{
+                      img = '<div class="vector-icon" style="width:' + ($(window).width() - 32) + 'px;" id="' + short + '"></div>';
+                    }
+// TODO: fix drink popup width on wide screens 
+                    
+                    var popup = '<div id="popup-' + short + '" data-role="popup" data-theme="a" data-overlay-theme="a" class="ui-corner-all" data-tolerance="15">' + closebtn + header + img + '<p>' + descriptionEn + '</p><p>' + descriptionRus + '</p></div>';
+  
+                
+              // Create the popup. Trigger "pagecreate" instead of "create" because currently the framework doesn't bind the enhancement of toolbars to the "create" event (js/widgets/page.sections.js).
+              $.mobile.activePage.append( popup ).trigger( "pagecreate" );
+              // Wait with opening the popup until the popup image has been loaded in the DOM.
+              // This ensures the popup gets the correct size and position
+              $( ".photo", "#popup-" + short ).load(function() {
+                  var height = $( this ).height(),
+                      width = $( this ).width();
+                  // Set height and width attribute of the image
+                  $( this ).attr({ "height": height, "width": width });
+                  // Open the popup
+                  $( "#popup-" + short ).popup( "open" );
+                  // Clear the fallback
+                  clearTimeout( fallback );
+              });
+              // Fallback in case the browser doesn't fire a load event
+              var fallback = setTimeout(function() {
+                  $( "#popup-" + short ).popup( "open" );
+              }, 1000);
+          });
+          // Set a max-height to make large images shrink to fit the screen.
+          $( document ).on( "popupbeforeposition", ".ui-popup", function() {
+              // 68px: 2 * 15px for top/bottom tolerance, 38px for the header.
+              var maxHeight = $( window ).height() - 68 + "px";
+              $( "img.photo", this ).css( "max-height", maxHeight );
+          });
+          // Remove the popup after it has been closed to manage DOM size
+          $( document ).on( "popupafterclose", ".ui-popup", function() {
+              $( this ).remove();
+          });
+      
+      });
+      
+    </script>
 
 	</body>
 </html>

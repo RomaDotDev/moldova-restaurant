@@ -17,72 +17,7 @@
 		<link rel="stylesheet" href="css/style.css?v2" />	
 		<link rel="stylesheet" href="css/photoswipe.css?v1" />			
 
-		<script src="js/klass.min.js?v1"></script>
-		<script src="js/vendor/jquery.min.js?v1"></script>
-		<script src="js/vendor/jquery.mobile.min.js?v1"></script>
-		<script src="js/code.photoswipe.jquery-3.0.5.min.js?v1"></script>		
-		<script>
-
-	// Gallery init
-
-			/*
-			 * IMPORTANT!!!
-			 * REMEMBER TO ADD  rel="external"  to your anchor tags. 
-			 * If you don't this will mess with how jQuery Mobile works
-			 */
-/*			
-			(function(window, $, PhotoSwipe){
-				
-				$(document).ready(function(){
-					
-					$('#gallery')
-						.on('pageshow', function(e){
-							var 
-								currentPage = $(e.target),
-								options = {
-									allowUserZoom: false,
-									captionAndToolbarAutoHideDelay: false,
-									imageScaleMethod: 'fitNoUpscale',
-									zIndex: 2000,
-									swipeThreshold: 25
-								},
-								photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options,  currentPage.attr('id'));
-								
-							return true;
-							
-						})
-						.on('pagehide', function(e){
-							
-							var 
-								currentPage = $(e.target),
-								photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
-	
-							if (typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
-								PhotoSwipe.detatch(photoSwipeInstance);
-							}
-							
-							return true;
-							
-						});
-					
-				});
-			
-			}(window, window.jQuery, window.Code.PhotoSwipe));
-*/
-
-		(function(window, $, PhotoSwipe){
-			
-			$(document).ready(function(){
-				
-				var options = {};
-				$("#galleryList a").photoSwipe(options);
-			
-			});
-			
-			
-		}(window, window.jQuery, window.Code.PhotoSwipe));
-			
-
+    <script>
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-33528867-1']);
 		  _gaq.push(['_setDomainName', 'moldaviancuisine.com']);
@@ -93,16 +28,15 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-
 		</script>
 
 	</head>
 	<body>
 
 		<!-- Gallery page -->
-		<div data-role="page" class="type-interior" id="gallerypage">
+		<div data-role="page" class="type-interior jqm-page" id="gallerypage">
 
-			<div data-role="panel" id="menupanel" data-theme="g">
+			<div id="menupanel" class="jqm-navmenu-panel" data-role="panel" data-position="left" data-display="overlay">
 				<ul data-role="listview" data-theme="g" data-divider-theme="g">
 					<li data-role="list-divider">Menus</li>
 					<li data-icon="food"><a href="menu.html" rel="external">Casual Menu</a></li>
@@ -119,10 +53,10 @@
 
 			<div data-role="header" data-position="fixed">
 				<h1>Gallery</h1>
-				<a href="#menupanel" class="ui-btn ui-icon-reorder ui-btn-icon-notext">Menu</a>
+				<a href="#menupanel" class="menu-btn ui-btn ui-icon-reorder ui-btn-icon-notext">Menu</a>
 			</div><!-- /header -->
 			
-			<div data-role="content" class="grid-listview" id="gallery">
+			<div role="main" class="grid-listview jqm-content" id="gallery">
 
 				<ul id="galleryList" class="gallery" data-role="listview" data-inset="true">
 
@@ -161,7 +95,7 @@
 				
 			</div><!-- /content -->
 			
-			<div data-role="footer"  class="pagefooter">
+			<div class="pagefooter jqm-footer" data-role="footer" data-position="fixed" data-tap-toggle="false">
         <p id="menu_footer">
           <a rel="nofollow" target="_blank" href="http://m.yelp.com/biz/moldova-restaurant-brooklyn" class="ui-btn ui-icon-yelp ui-btn-icon-notext">Yelp</a>
           <a rel="nofollow" target="_blank" href="https://m.facebook.com/moldovarestaurant" class="ui-btn ui-icon-facebook ui-btn-icon-notext">Facebook</a>
@@ -198,5 +132,71 @@
 
 		</div><!-- /page -->
 
+    <script src="js/klass.min.js?v1"></script>
+    <script src="js/vendor/jquery.min.js?v1"></script>
+    <script src="js/vendor/jquery.mobile.min.js?v1"></script>
+    <script src="js/code.photoswipe.jquery-3.0.5.min.js?v1"></script>   
+    <script>
+
+  // Gallery init
+
+      /*
+       * IMPORTANT!!!
+       * REMEMBER TO ADD  rel="external"  to your anchor tags. 
+       * If you don't this will mess with how jQuery Mobile works
+       */
+/*      
+      (function(window, $, PhotoSwipe){
+        
+        $(document).ready(function(){
+          
+          $('#gallery')
+            .on('pageshow', function(e){
+              var 
+                currentPage = $(e.target),
+                options = {
+                  allowUserZoom: false,
+                  captionAndToolbarAutoHideDelay: false,
+                  imageScaleMethod: 'fitNoUpscale',
+                  zIndex: 2000,
+                  swipeThreshold: 25
+                },
+                photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options,  currentPage.attr('id'));
+                
+              return true;
+              
+            })
+            .on('pagehide', function(e){
+              
+              var 
+                currentPage = $(e.target),
+                photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
+  
+              if (typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
+                PhotoSwipe.detatch(photoSwipeInstance);
+              }
+              
+              return true;
+              
+            });
+          
+        });
+      
+      }(window, window.jQuery, window.Code.PhotoSwipe));
+*/
+
+    (function(window, $, PhotoSwipe){
+      
+      $(document).ready(function(){
+        
+        var options = {};
+        $("#galleryList a").photoSwipe(options);
+      
+      });
+      
+      
+    }(window, window.jQuery, window.Code.PhotoSwipe));
+      
+    </script>
 	</body>
 </html>

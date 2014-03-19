@@ -16,8 +16,6 @@
 		<link rel="stylesheet" href="css/jquery.mobile.min.css?v1" />
 		<link rel="stylesheet" href="css/style.css?v2" />		
 		
-		<script src="js/vendor/jquery.min.js?v1"></script>
-		<script src="js/vendor/jquery.mobile.min.js?v1"></script>
 		<script>
 
 		  var _gaq = _gaq || [];
@@ -30,81 +28,17 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-
-
-// Map init
-			function scale( width, height, padding, border ) {
-			    var scrWidth = $( window ).width() - 30,
-			        scrHeight = $( window ).height() - 30,
-			        ifrPadding = 2 * padding,
-			        ifrBorder = 2 * border,
-			        ifrWidth = width + ifrPadding + ifrBorder,
-			        ifrHeight = height + ifrPadding + ifrBorder,
-			        h, w;
-			
-			    if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
-			        w = ifrWidth;
-			        h = ifrHeight;
-			    } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
-			        w = scrWidth;
-			        h = ( scrWidth / ifrWidth ) * ifrHeight;
-			    } else {
-			        h = scrHeight;
-			        w = ( scrHeight / ifrHeight ) * ifrWidth;
-			    }
-			
-			    return {
-			        'width': w - ( ifrPadding + ifrBorder ),
-			        'height': h - ( ifrPadding + ifrBorder )
-			    };
-			};
-
-			$( document ).on( "pageinit", "#contact", function() {
-				
-				$( "#popupMap iframe" )
-				        .attr( "width", 0 )
-				        .attr( "height", 0 );
-				
-				    $( "#popupMap iframe" ).contents().find( "#map_canvas" )
-				        .css( { "width" : 0, "height" : 0 } );
-				
-				    $( "#popupMap" ).on({
-				        popupbeforeposition: function() {
-				            var size = scale( 480, 320, 0, 1 ),
-				                w = size.width,
-				                h = size.height;
-				
-				            $( "#popupMap iframe" )
-				                .attr( "width", w )
-				                .attr( "height", h );
-				
-				            $( "#popupMap iframe" ).contents().find( "#map_canvas" )
-				                .css( { "width": w, "height" : h } );
-				        },
-				        popupafterclose: function() {
-				            $( "#popupMap iframe" )
-				                .attr( "width", 0 )
-				                .attr( "height", 0 );
-				
-				            $( "#popupMap iframe" ).contents().find( "#map_canvas" )
-				                .css( { "width": 0, "height" : 0 } );
-				        }
-				    });
-			    
-			});
-
-		
-		</script>
+    </script>
 
 	</head>
 	<body>
 
 
 <!-- Contact page -->
-		<div data-role="page" class="type-interior" id="contact">
+		<div data-role="page" class="type-interior jqm-page" id="contact">
 
 
-			<div data-role="panel" id="menupanel" data-theme="g">
+			<div id="menupanel" class="jqm-navmenu-panel" data-role="panel" data-position="left" data-display="overlay">
 				<ul data-role="listview" data-theme="g" data-divider-theme="g">
 					<li data-role="list-divider">Menus</li>
 					<li data-icon="food"><a href="menu.html" rel="external">Casual Menu</a></li>
@@ -121,10 +55,10 @@
 
 			<div data-role="header" data-position="fixed">
 				<h1>Contact</h1>
-				<a href="#menupanel" class="ui-btn ui-icon-reorder ui-btn-icon-notext">Menu</a>				
+				<a href="#menupanel" class="menu-btn ui-btn ui-icon-reorder ui-btn-icon-notext">Menu</a>				
 			</div><!-- /header -->
 			
-			<div data-role="content">
+			<div role="main" class="jqm-content">
 
 
 				<div class="ui-grid-a ui-responsive">
@@ -214,7 +148,7 @@
 				
 			</div><!-- /content -->
 			
-			<div data-role="footer" class="pagefooter">
+			<div class="pagefooter jqm-footer" data-role="footer" data-position="fixed" data-tap-toggle="false">
         <p id="menu_footer">
           <a rel="nofollow" target="_blank" href="http://m.yelp.com/biz/moldova-restaurant-brooklyn" class="ui-btn ui-icon-yelp ui-btn-icon-notext">Yelp</a>
           <a rel="nofollow" target="_blank" href="https://m.facebook.com/moldovarestaurant" class="ui-btn ui-icon-facebook ui-btn-icon-notext">Facebook</a>
@@ -250,6 +184,71 @@
 
 		</div><!-- /page -->
 
-		
+    <script src="js/vendor/jquery.min.js?v1"></script>
+    <script src="js/vendor/jquery.mobile.min.js?v1"></script>
+    <script>
+// Map init
+      function scale( width, height, padding, border ) {
+          var scrWidth = $( window ).width() - 30,
+              scrHeight = $( window ).height() - 30,
+              ifrPadding = 2 * padding,
+              ifrBorder = 2 * border,
+              ifrWidth = width + ifrPadding + ifrBorder,
+              ifrHeight = height + ifrPadding + ifrBorder,
+              h, w;
+      
+          if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
+              w = ifrWidth;
+              h = ifrHeight;
+          } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
+              w = scrWidth;
+              h = ( scrWidth / ifrWidth ) * ifrHeight;
+          } else {
+              h = scrHeight;
+              w = ( scrHeight / ifrHeight ) * ifrWidth;
+          }
+      
+          return {
+              'width': w - ( ifrPadding + ifrBorder ),
+              'height': h - ( ifrPadding + ifrBorder )
+          };
+      };
+
+      $( document ).on( "pageinit", "#contact", function() {
+        
+        $( "#popupMap iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        
+            $( "#popupMap iframe" ).contents().find( "#map_canvas" )
+                .css( { "width" : 0, "height" : 0 } );
+        
+            $( "#popupMap" ).on({
+                popupbeforeposition: function() {
+                    var size = scale( 480, 320, 0, 1 ),
+                        w = size.width,
+                        h = size.height;
+        
+                    $( "#popupMap iframe" )
+                        .attr( "width", w )
+                        .attr( "height", h );
+        
+                    $( "#popupMap iframe" ).contents().find( "#map_canvas" )
+                        .css( { "width": w, "height" : h } );
+                },
+                popupafterclose: function() {
+                    $( "#popupMap iframe" )
+                        .attr( "width", 0 )
+                        .attr( "height", 0 );
+        
+                    $( "#popupMap iframe" ).contents().find( "#map_canvas" )
+                        .css( { "width": 0, "height" : 0 } );
+                }
+            });
+          
+      });
+
+    
+    </script>    	
 	</body>
 </html>

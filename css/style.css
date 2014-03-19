@@ -5,12 +5,7 @@
  ====================*/
 
 .clear{
-	clear:both;
-}
-
-div [data-role="content"]{
-	margin: auto;
-	max-width: 1050px;
+  clear:both;
 }
 
 .ui-btn-icon-notext{
@@ -36,6 +31,88 @@ div [data-role="content"]{
   height: 1em;
   padding-right: .2em;
   width: 1em;
+}
+
+/* Navmenu */
+/* JQM Demos custom CSS */
+
+/* Header */
+.jqm-page .jqm-header {
+  background: #fff;
+  border-top: 4px solid #3eb249;
+  border-bottom-color: #eee;
+}
+.jqm-page .jqm-header h2 {
+  padding: .4em 0 .1em;
+  margin: 0 3em;
+}
+
+.jqm-page .jqm-header .ui-btn {
+  width: 2em;
+  height: 2em;
+  background: none;
+  border: 0;
+  top: 50%;
+  margin-top: -1em;
+  -webkit-border-radius: .3125em;
+  border-radius: .3125em;
+  opacity: .4;
+  filter: Alpha(Opacity=40);
+}
+
+/* Footer */
+.jqm-page .jqm-footer.ui-footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: 35em) {
+  .jqm-block-content {
+    min-height: 18em;
+  }
+}
+
+@media (min-width: 60em) {
+  .jqm-page .jqm-navmenu-panel .ui-li-divider,
+  .jqm-page .menu-btn{
+    display: none;
+  }
+
+  .jqm-page .jqm-navmenu-panel {
+    visibility: visible;
+    position: relative;
+    left: 0;
+    float: left;
+    width: 25%;
+    background: none;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    transform: none !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .jqm-page.jqm-panel-page .jqm-navmenu-panel {
+    display: none;
+  }
+  html .jqm-page.jqm-panel-page .jqm-navmenu-panel.jqm-panel-page-nav {
+    display: block;
+  }
+  .jqm-page .jqm-navmenu-panel .ui-panel-inner {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+  .jqm-page .jqm-content {
+    width: 67%;
+    padding-top: 2em;
+    padding-left: 5%;
+    padding-right: 3%;
+    float: right;
+  }
 }
 
 
@@ -310,17 +387,17 @@ div [data-role="content"]{
 
 
 #menupanel .ui-li-divider {
-	padding: .2em 15px;
-	font-size: 12px;
+  padding: .2em 15px;
+  font-size: 12px;
 }
 
 #menupanel .ui-btn-icon-right > .ui-btn-inner > .ui-icon {
-	margin-top: -9px;
-	left: 9px;
+  margin-top: -9px;
+  left: 9px;
 }
 
 #menupanel .ui-li-has-arrow .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow {
-	padding-left: 40px;
+  padding-left: 40px;
 }
 
 /*===================
@@ -331,27 +408,27 @@ div [data-role="content"]{
 
 
 .pagefooter{
-	color: #939393;
-	font-size: 0.8em;
-	text-align: center;
-	padding-bottom: 3em;
+  color: #939393;
+  font-size: 0.8em;
+  text-align: center;
+  padding-bottom: 3em;
 }
 
 #full_site{
-	display: block;
-	clear: both;
-	padding: 10px;
+  display: block;
+  clear: both;
+  padding: 10px;
 }
 
 #menu_footer{
   clear: both;
   display: inline-block;
   padding: 0;
-  margin: 0 auto;		
+  margin: 0 auto;   
 }
 
 #menu_footer a{
-	padding: .5em;
+  padding: .5em;
 }
 
 #menu_footer a:after{
@@ -366,23 +443,23 @@ div [data-role="content"]{
  ====================*/
 
 div[data-role="popup"] p {
-	clear: both;
-	padding: .5em 1em;
+  clear: both;
+  padding: .5em 1em;
 }
 
 div[data-role="popup"] div[data-role="header"] {
-	border-radius: .6em .6em 0 0
+  border-radius: .6em .6em 0 0
 }
 
 .ui-popup{
-	text-align: center;	
+  text-align: center; 
 }
 
 /* Breakpoint is 48em (768px). */
 @media ( min-width: 48em ) {
-	.ui-popup .ui-title, .ui-popup p {
-		font-size: .75em;
-	}
+  .ui-popup .ui-title, .ui-popup p {
+    font-size: .75em;
+  }
 }
 /*===================
  * 
@@ -392,34 +469,34 @@ div[data-role="popup"] div[data-role="header"] {
 
 /* delete gradient on gradient on index page */
 #index{
-	background: #f9f9f9!important;	
+  background: #f9f9f9!important;  
 }
 
 #logo-wrapper{
-	display: block;
-	height: 200px; 
-	width: 100%;
+  display: block;
+  height: 200px; 
+  width: 100%;
 }
 
-	#logo{
-		max-width: 200px;
-		background: url(../images/index/phone2x/Moldova-Restaurant-logo-big.jpg) no-repeat;
-		height: inherit;
-		background-size: contain;
-		margin: auto;
-	}
+  #logo{
+    max-width: 200px;
+    background: url(../images/index/phone2x/Moldova-Restaurant-logo-big.jpg) no-repeat;
+    height: inherit;
+    background-size: contain;
+    margin: auto;
+  }
 
 
 @media all and (min-width: 576px){
-	#logo-wrapper{
-		height: 335px;
-	}
-	
-	#logo{
-		max-width: 330px;
-		background: url(../images/index/tablet2x/Moldova-Restaurant-logo-big.jpg) no-repeat;
-		background-size: contain;
-	}
+  #logo-wrapper{
+    height: 335px;
+  }
+  
+  #logo{
+    max-width: 330px;
+    background: url(../images/index/tablet2x/Moldova-Restaurant-logo-big.jpg) no-repeat;
+    background-size: contain;
+  }
 
 }
 
@@ -429,13 +506,13 @@ div[data-role="popup"] div[data-role="header"] {
  * 
  ====================*/
 #yelpRating{
-	float:left; 
-	margin-right:1.5em;
+  float:left; 
+  margin-right:1.5em;
 }
 
 blockquote{
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 blockquote.ui-icon-inline:before{
@@ -445,13 +522,13 @@ blockquote.ui-icon-inline:before{
 }
 
 .entry-inner, .entry-author{
-	display: block;
-	margin-left: 3em;
+  display: block;
+  margin-left: 3em;
 }
 
 .entry-outer,  .entry-outer-responsible{
-	border-bottom: 1px solid #2489ce;
-	display: block;
+  border-bottom: 1px solid #2489ce;
+  display: block;
 }
 
 
@@ -462,85 +539,85 @@ blockquote.ui-icon-inline:before{
  ====================*/
 
 #goldmanlogo{
-	background: url(../images/about-us/thumbs/goldman-sachs-logo.png);
+  background: url(../images/about-us/thumbs/goldman-sachs-logo.png);
 }
 
 #citilogo{
-	background: url(../images/about-us/thumbs/citigroup-logo.png);
+  background: url(../images/about-us/thumbs/citigroup-logo.png);
 }
 
 #suisselogo{
-	background: url(../images/about-us/thumbs/credit-suisse-logo.png);
+  background: url(../images/about-us/thumbs/credit-suisse-logo.png);
 }
 
 #signage{
-	background: url(../images/about-us/phone2x/signage.jpg);	
+  background: url(../images/about-us/phone2x/signage.jpg);  
 }
 #goldman{
-	background: url(../images/about-us/phone2x/at-goldman-sachs.jpg);	
+  background: url(../images/about-us/phone2x/at-goldman-sachs.jpg); 
 }
 #citi{
-	background: url(../images/about-us/phone2x/at-citigroup.jpg);
+  background: url(../images/about-us/phone2x/at-citigroup.jpg);
 }
 
 #suisse{
-	background: url(../images/about-us/phone2x/at-Credit-Suisse.jpg);	
+  background: url(../images/about-us/phone2x/at-Credit-Suisse.jpg); 
 }
 
 @media all and (max-width: 560px){
 
-	.margincell{
-		margin-top: 3em;
-	}
+  .margincell{
+    margin-top: 3em;
+  }
 
 }
 /* Breakpoint is 48em (768px). */
 @media all and (min-width: 48em){
 
-	.margincell{
-		margin-top: 0;
-	}
+  .margincell{
+    margin-top: 0;
+  }
 
-	#signage{
-		background: url(../images/about-us/tablet2x/signage.jpg);	
-	}
-	#goldman{
-		background: url(../images/about-us/tablet2x/at-goldman-sachs.jpg);	
-	}
-	#citi{
-		background: url(../images/about-us/tablet2x/at-citigroup.jpg);
-	}
+  #signage{
+    background: url(../images/about-us/tablet2x/signage.jpg); 
+  }
+  #goldman{
+    background: url(../images/about-us/tablet2x/at-goldman-sachs.jpg);  
+  }
+  #citi{
+    background: url(../images/about-us/tablet2x/at-citigroup.jpg);
+  }
 
-	#suisse{
-		background: url(../images/about-us/tablet2x/at-Credit-Suisse.jpg);	
-	}
-	
+  #suisse{
+    background: url(../images/about-us/tablet2x/at-Credit-Suisse.jpg);  
+  }
+  
 }
 
 
 .image-wrapper {
-	position:relative;
-	padding:50% 0 0 0;
-	height:0;
+  position:relative;
+  padding:50% 0 0 0;
+  height:0;
 }
 
 .image {
-	position:absolute;
-	left: 0em;
-	top: 0em;
-	right: 0em;
-	bottom: 0em;
-	background-position: center!important;
-	background-size: contain!important;
-	background-repeat: no-repeat!important;
-	width: 100%;
+  position:absolute;
+  left: 0em;
+  top: 0em;
+  right: 0em;
+  bottom: 0em;
+  background-position: center!important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  width: 100%;
 }
 
 
 .caption{
-	text-align: center;
-	display: inline-block;
-	width: 100%;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
 }
 
 /*===================
@@ -550,11 +627,11 @@ blockquote.ui-icon-inline:before{
  ====================*/
 
 #frigarui-de-gaina-zeama-combo{
-	background: url(../images/lunch/phone2x/Frigarui-de-Gaina-Zeama-lunch-combo.jpg);
+  background: url(../images/lunch/phone2x/Frigarui-de-Gaina-Zeama-lunch-combo.jpg);
 }
 
 #mamaliga-trapeza-taranesc-lunch-combo{
-	background: url(../images/lunch/phone2x/Mamaliga-Trapeza-Taranesc-lunch-combo.jpg);
+  background: url(../images/lunch/phone2x/Mamaliga-Trapeza-Taranesc-lunch-combo.jpg);
 }
 
 
@@ -567,37 +644,37 @@ blockquote.ui-icon-inline:before{
 
 /* Phone HDPI */
 .slide{
-	display: block;
-	height: 100%;
-	width: 100%;
-	background-repeat: no-repeat!important;
-	background-size: cover!important;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
 }
 
-	.family-party{ 	background: url(../images/gallery/phone2x/01-family-party.jpg); } 
-	.green-room-banquet-preparations{ background: url(../images/gallery/phone2x/02-green-room-banquet-preparations.jpg); }
-	.martisor{ background: url(../images/gallery/phone2x/03-martisor.jpg); }
-	.new-year-party-dancing{ background: url(../images/gallery/phone2x/04-new-year-party-dancing.jpg); }
-	.new-year-signange{ background: url(../images/gallery/phone2x/05-new-year-signange.jpg); }
-	.st-valentines-party-signage{ background: url(../images/gallery/phone2x/06-st-valentines-party-signage.jpg); }
-	.st-valentines-amor-concert{ background: url(../images/gallery/phone2x/07-st-valentines-amor-concert.jpg); }
-	.high-relief{ background: url(../images/gallery/phone2x/08-high-relief.jpg); }
-	.christmas-restaurant-signage{ background: url(../images/gallery/phone2x/09-christmas-restaurant-signage.jpg); }
-	.sign{ background: url(../images/gallery/phone2x/10-sign.jpg); }
-	.moldova-room-tables{ background: url(../images/gallery/phone2x/11-moldova-room-tables.jpg); }
-	.green-room-banquet{ background: url(../images/gallery/phone2x/12-green-room-banquet.jpg); }
-	.figurine{ background: url(../images/gallery/phone2x/13-figurine.jpg); }
-	.national-costumes{ background: url(../images/gallery/phone2x/14-national-costumes.jpg); }
-	.moldova-room-overview{ background: url(../images/gallery/phone2x/15-moldova-room-overview.jpg); }
-	.earthenware-jar{ background: url(../images/gallery/phone2x/16-earthenware-jar.jpg); }
-	.authentic-decor{ background: url(../images/gallery/phone2x/17-authentic-decor.jpg); }
-	.moldova-room-banquet-preparation{ background: url(../images/gallery/phone2x/18-moldova-room-banquet-preparation.jpg); }
-	.moldova-room-1{ background: url(../images/gallery/phone2x/19-moldova-room-1.jpg); }
-	.green-room-1{ background: url(../images/gallery/phone2x/20-green-room-1.jpg); }
-	.green-room-2{ background: url(../images/gallery/phone2x/21-green-room-2.jpg); }
-	.green-room-3{ background: url(../images/gallery/phone2x/22-green-room-3.jpg); }
-	.moldova-room-2{ background: url(../images/gallery/phone2x/23-moldova-room-2.jpg); }
-	.moldova-room-3{ background: url(../images/gallery/phone2x/24-moldova-room-3.jpg); }
+  .family-party{  background: url(../images/gallery/phone2x/01-family-party.jpg); } 
+  .green-room-banquet-preparations{ background: url(../images/gallery/phone2x/02-green-room-banquet-preparations.jpg); }
+  .martisor{ background: url(../images/gallery/phone2x/03-martisor.jpg); }
+  .new-year-party-dancing{ background: url(../images/gallery/phone2x/04-new-year-party-dancing.jpg); }
+  .new-year-signange{ background: url(../images/gallery/phone2x/05-new-year-signange.jpg); }
+  .st-valentines-party-signage{ background: url(../images/gallery/phone2x/06-st-valentines-party-signage.jpg); }
+  .st-valentines-amor-concert{ background: url(../images/gallery/phone2x/07-st-valentines-amor-concert.jpg); }
+  .high-relief{ background: url(../images/gallery/phone2x/08-high-relief.jpg); }
+  .christmas-restaurant-signage{ background: url(../images/gallery/phone2x/09-christmas-restaurant-signage.jpg); }
+  .sign{ background: url(../images/gallery/phone2x/10-sign.jpg); }
+  .moldova-room-tables{ background: url(../images/gallery/phone2x/11-moldova-room-tables.jpg); }
+  .green-room-banquet{ background: url(../images/gallery/phone2x/12-green-room-banquet.jpg); }
+  .figurine{ background: url(../images/gallery/phone2x/13-figurine.jpg); }
+  .national-costumes{ background: url(../images/gallery/phone2x/14-national-costumes.jpg); }
+  .moldova-room-overview{ background: url(../images/gallery/phone2x/15-moldova-room-overview.jpg); }
+  .earthenware-jar{ background: url(../images/gallery/phone2x/16-earthenware-jar.jpg); }
+  .authentic-decor{ background: url(../images/gallery/phone2x/17-authentic-decor.jpg); }
+  .moldova-room-banquet-preparation{ background: url(../images/gallery/phone2x/18-moldova-room-banquet-preparation.jpg); }
+  .moldova-room-1{ background: url(../images/gallery/phone2x/19-moldova-room-1.jpg); }
+  .green-room-1{ background: url(../images/gallery/phone2x/20-green-room-1.jpg); }
+  .green-room-2{ background: url(../images/gallery/phone2x/21-green-room-2.jpg); }
+  .green-room-3{ background: url(../images/gallery/phone2x/22-green-room-3.jpg); }
+  .moldova-room-2{ background: url(../images/gallery/phone2x/23-moldova-room-2.jpg); }
+  .moldova-room-3{ background: url(../images/gallery/phone2x/24-moldova-room-3.jpg); }
 
 
   #gallery .ui-content {
@@ -659,36 +736,36 @@ blockquote.ui-icon-inline:before{
 /* Breakpoint is 48em (768px). */
 @media ( min-width: 48em ) {
 
-	.slide{
-		background: none;
-	}
+  .slide{
+    background: none;
+  }
 
 /* Tablet HDPI */
 
-	.family-party{ 	background: url(../images/gallery/tablet2x/01-family-party.jpg); } 
-	.green-room-banquet-preparations{ background: url(../images/gallery/tablet2x/02-green-room-banquet-preparations.jpg); }
-	.martisor{ background: url(../images/gallery/tablet2x/03-martisor.jpg); }
-	.new-year-party-dancing{ background: url(../images/gallery/tablet2x/04-new-year-party-dancing.jpg); }
-	.new-year-signange{ background: url(../images/gallery/tablet2x/05-new-year-signange.jpg); }
-	.st-valentines-party-signage{ background: url(../images/gallery/tablet2x/06-st-valentines-party-signage.jpg); }
-	.st-valentines-amor-concert{ background: url(../images/gallery/tablet2x/07-st-valentines-amor-concert.jpg); }
-	.high-relief{ background: url(../images/gallery/tablet2x/08-high-relief.jpg); }
-	.christmas-restaurant-signage{ background: url(../images/gallery/tablet2x/09-christmas-restaurant-signage.jpg); }
-	.sign{ background: url(../images/gallery/tablet2x/10-sign.jpg); }
-	.moldova-room-tables{ background: url(../images/gallery/tablet2x/11-moldova-room-tables.jpg); }
-	.green-room-banquet{ background: url(../images/gallery/tablet2x/12-green-room-banquet.jpg); }
-	.figurine{ background: url(../images/gallery/tablet2x/13-figurine.jpg); }
-	.national-costumes{ background: url(../images/gallery/tablet2x/14-national-costumes.jpg); }
-	.moldova-room-overview{ background: url(../images/gallery/tablet2x/15-moldova-room-overview.jpg); }
-	.earthenware-jar{ background: url(../images/gallery/tablet2x/16-earthenware-jar.jpg); }
-	.authentic-decor{ background: url(../images/gallery/tablet2x/17-authentic-decor.jpg); }
-	.moldova-room-banquet-preparation{ background: url(../images/gallery/tablet2x/18-moldova-room-banquet-preparation.jpg); }
-	.moldova-room-1{ background: url(../images/gallery/tablet2x/19-moldova-room-1.jpg); }
-	.green-room-1{ background: url(../images/gallery/tablet2x/20-green-room-1.jpg); }
-	.green-room-2{ background: url(../images/gallery/tablet2x/21-green-room-2.jpg); }
-	.green-room-3{ background: url(../images/gallery/tablet2x/22-green-room-3.jpg); }
-	.moldova-room-2{ background: url(../images/gallery/tablet2x/23-moldova-room-2.jpg); }
-	.moldova-room-3{ background: url(../images/gallery/tablet2x/24-moldova-room-3.jpg); }
+  .family-party{  background: url(../images/gallery/tablet2x/01-family-party.jpg); } 
+  .green-room-banquet-preparations{ background: url(../images/gallery/tablet2x/02-green-room-banquet-preparations.jpg); }
+  .martisor{ background: url(../images/gallery/tablet2x/03-martisor.jpg); }
+  .new-year-party-dancing{ background: url(../images/gallery/tablet2x/04-new-year-party-dancing.jpg); }
+  .new-year-signange{ background: url(../images/gallery/tablet2x/05-new-year-signange.jpg); }
+  .st-valentines-party-signage{ background: url(../images/gallery/tablet2x/06-st-valentines-party-signage.jpg); }
+  .st-valentines-amor-concert{ background: url(../images/gallery/tablet2x/07-st-valentines-amor-concert.jpg); }
+  .high-relief{ background: url(../images/gallery/tablet2x/08-high-relief.jpg); }
+  .christmas-restaurant-signage{ background: url(../images/gallery/tablet2x/09-christmas-restaurant-signage.jpg); }
+  .sign{ background: url(../images/gallery/tablet2x/10-sign.jpg); }
+  .moldova-room-tables{ background: url(../images/gallery/tablet2x/11-moldova-room-tables.jpg); }
+  .green-room-banquet{ background: url(../images/gallery/tablet2x/12-green-room-banquet.jpg); }
+  .figurine{ background: url(../images/gallery/tablet2x/13-figurine.jpg); }
+  .national-costumes{ background: url(../images/gallery/tablet2x/14-national-costumes.jpg); }
+  .moldova-room-overview{ background: url(../images/gallery/tablet2x/15-moldova-room-overview.jpg); }
+  .earthenware-jar{ background: url(../images/gallery/tablet2x/16-earthenware-jar.jpg); }
+  .authentic-decor{ background: url(../images/gallery/tablet2x/17-authentic-decor.jpg); }
+  .moldova-room-banquet-preparation{ background: url(../images/gallery/tablet2x/18-moldova-room-banquet-preparation.jpg); }
+  .moldova-room-1{ background: url(../images/gallery/tablet2x/19-moldova-room-1.jpg); }
+  .green-room-1{ background: url(../images/gallery/tablet2x/20-green-room-1.jpg); }
+  .green-room-2{ background: url(../images/gallery/tablet2x/21-green-room-2.jpg); }
+  .green-room-3{ background: url(../images/gallery/tablet2x/22-green-room-3.jpg); }
+  .moldova-room-2{ background: url(../images/gallery/tablet2x/23-moldova-room-2.jpg); }
+  .moldova-room-3{ background: url(../images/gallery/tablet2x/24-moldova-room-3.jpg); }
    
    #gallery .ui-listview li {
     float: left;
@@ -696,12 +773,12 @@ blockquote.ui-icon-inline:before{
     height: 14.5em; /* 232p */
     margin: .5625em 1.2%;
   }
-       	
+        
 }
 
 
-/* Second breakpoint is 63.75em (1020px). 4 column layout. Tiles will be 250x250 pixels incl. margin again at the breakpoint. */
-@media ( min-width: 63.75em ) {
+/* Second breakpoint is 80em (1280px). 4 column layout. Tiles will be 250x250 pixels incl. margin again at the breakpoint. */
+@media ( min-width: 80em ) {
     #gallery .ui-content {
         padding: .625em; /* 10px */
     }
@@ -727,24 +804,24 @@ blockquote.ui-icon-inline:before{
  ====================*/
 
 .spinner{
-	background: url(images/ajax-loader.gif);
-	height: 80px;
-	width: 80px;
-	background-size: 46px 46px;
-	background-position: center center;
-	background-repeat:no-repeat;
-	float: left;
-	margin-right: 10px;
+  background: url(images/ajax-loader.gif);
+  height: 80px;
+  width: 80px;
+  background-size: 46px 46px;
+  background-position: center center;
+  background-repeat:no-repeat;
+  float: left;
+  margin-right: 10px;
 }
 
 .vector-icon{
-	text-align: center;
-	font-size: 4em;
-	text-shadow: 0 -1px 0 black;
+  text-align: center;
+  font-size: 4em;
+  text-shadow: 0 -1px 0 black;
 }
 
 .ui-popup-container .vector-icon{
-	font-size: 11em;
+  font-size: 11em;
 }
 
 .grid-listview .ui-listview li > .ui-btn {
@@ -762,238 +839,238 @@ blockquote.ui-icon-inline:before{
 
 /* Phone HDPI */
 .photo{
-	display: block;
-	float: left;
-	height: 80px;
-	width: 80px;
-	background-repeat: no-repeat!important;
-	background-size: cover!important;	
+  display: block;
+  float: left;
+  height: 80px;
+  width: 80px;
+  background-repeat: no-repeat!important;
+  background-size: cover!important; 
 }
        
 /* Salads */
-	#Taranesc { background: url(../images/dishes/phone2x/5_01_Taranesc.jpg); }	
-	#Delicios { background: url(../images/dishes/phone2x/5_02_Delicios.jpg); }
-	#Primavara { background: url(../images/dishes/phone2x/5_03_Primavara.jpg); }
-	#Salata-cu-Carne-de-Vita { background: url(../images/dishes/phone2x/5_04_Salata-cu-Carne-de-Vita.jpg); }
-	#Salata-din-Limba { background: url(../images/dishes/phone2x/5_05_Salata-din-Limba.jpg); }
-	#Dunarea { background: url(../images/dishes/phone2x/5_06_Dunarea.jpg); }
-	#Salata-de-Varza { background: url(../images/dishes/phone2x/5_07_Salata-de-Varza.jpg); }
-	#Nistru { background: url(../images/dishes/phone2x/5_08_Nistru.jpg); }
-	#Salata-Orheiului:before { content: "\f117"; }
-	#Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }
+  #Taranesc { background: url(../images/dishes/phone2x/5_01_Taranesc.jpg); }  
+  #Delicios { background: url(../images/dishes/phone2x/5_02_Delicios.jpg); }
+  #Primavara { background: url(../images/dishes/phone2x/5_03_Primavara.jpg); }
+  #Salata-cu-Carne-de-Vita { background: url(../images/dishes/phone2x/5_04_Salata-cu-Carne-de-Vita.jpg); }
+  #Salata-din-Limba { background: url(../images/dishes/phone2x/5_05_Salata-din-Limba.jpg); }
+  #Dunarea { background: url(../images/dishes/phone2x/5_06_Dunarea.jpg); }
+  #Salata-de-Varza { background: url(../images/dishes/phone2x/5_07_Salata-de-Varza.jpg); }
+  #Nistru { background: url(../images/dishes/phone2x/5_08_Nistru.jpg); }
+  #Salata-Orheiului:before { content: "\f117"; }
+  #Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }
 
 /* Cold Appetizers */
-	#Moldova { background: url(../images/dishes/phone2x/1_01_Moldova.jpg); }	
-	#Platou-din-Legume-Prajite { background: url(../images/dishes/phone2x/1_02_Legume-prajite-Platou.jpg); }
-	#Platou-de-Peste { background: url(../images/dishes/phone2x/1_03_Platou-de-Peste.jpg); }
-	#Gogoase-Picante { background: url(../images/dishes/phone2x/1_04_Gogoase-Picante.jpg); }
-	#Racituri { background: url(../images/dishes/phone2x/1_05_Racituri.jpg); }
-	#Icra-de-Vinata { background: url(../images/dishes/phone2x/1_06_Icra-de-Vinata.jpg); }
-	#Fasolita { background: url(../images/dishes/phone2x/1_07_Fasolita.jpg); }
-	#Limba-de-Vita { background: url(../images/dishes/phone2x/1_08_Limba-de-Vita.jpg); }
-	#Muschi-Bujenina { background: url(../images/dishes/phone2x/1_09_Muschi-Bujenina.jpg); }
-	#Muraturi { background: url(../images/dishes/phone2x/1_10_Muraturi.jpg); }
-	#Hering-cu-Cartofi-noi-cu-Marari { background: url(../images/dishes/phone2x/1_11_Hering-cu-Cartofi-noi-cu-Marari.jpg); }
-	#Platou-cu-Cascaval { background: url(../images/dishes/phone2x/1_12_Platou-cu-Cascaval.jpg); }
-	#Trapeza-Haiducului { background: url(../images/dishes/phone2x/1_13_Trapeza-Haiducului.jpg); }
-	#Platou-de-Carne { background: url(../images/dishes/phone2x/1_14_Platou-de-Carne.jpg); }
+  #Moldova { background: url(../images/dishes/phone2x/1_01_Moldova.jpg); }  
+  #Platou-din-Legume-Prajite { background: url(../images/dishes/phone2x/1_02_Legume-prajite-Platou.jpg); }
+  #Platou-de-Peste { background: url(../images/dishes/phone2x/1_03_Platou-de-Peste.jpg); }
+  #Gogoase-Picante { background: url(../images/dishes/phone2x/1_04_Gogoase-Picante.jpg); }
+  #Racituri { background: url(../images/dishes/phone2x/1_05_Racituri.jpg); }
+  #Icra-de-Vinata { background: url(../images/dishes/phone2x/1_06_Icra-de-Vinata.jpg); }
+  #Fasolita { background: url(../images/dishes/phone2x/1_07_Fasolita.jpg); }
+  #Limba-de-Vita { background: url(../images/dishes/phone2x/1_08_Limba-de-Vita.jpg); }
+  #Muschi-Bujenina { background: url(../images/dishes/phone2x/1_09_Muschi-Bujenina.jpg); }
+  #Muraturi { background: url(../images/dishes/phone2x/1_10_Muraturi.jpg); }
+  #Hering-cu-Cartofi-noi-cu-Marari { background: url(../images/dishes/phone2x/1_11_Hering-cu-Cartofi-noi-cu-Marari.jpg); }
+  #Platou-cu-Cascaval { background: url(../images/dishes/phone2x/1_12_Platou-cu-Cascaval.jpg); }
+  #Trapeza-Haiducului { background: url(../images/dishes/phone2x/1_13_Trapeza-Haiducului.jpg); }
+  #Platou-de-Carne { background: url(../images/dishes/phone2x/1_14_Platou-de-Carne.jpg); }
 
 /*  Hot Appetizers */
-	#Ursuleti { background: url(../images/dishes/phone2x/2_01_Ursuleti.jpg); }
-	#Coltunasi-Fat-Frumos { background: url(../images/dishes/phone2x/2_02_Coltunasi-Fat-Frumos.jpg); }
-	#Placinte { background: url(../images/dishes/phone2x/2_03_Placinte.jpg); }
-	#Sarmale-ca-la-Mama { background: url(../images/dishes/phone2x/2_04_Sarmale-ca-la-Mama.jpg); }
-	#Mititei { background: url(../images/dishes/phone2x/2_05_Mititei.jpg); }
-	#Carnaciori { background: url(../images/dishes/phone2x/2_06_Carnaciori.jpg); }
-	#Jumari { background: url(../images/dishes/phone2x/2_07_Jumari.jpg); }
-	#Chiperi-Umpluti:before { content: "\f117"; }
-	#Cascaval-Pane:before { content: "\f117"; }
-	#Coltunasi-Lenesi:before { content: "\f117"; }
-	
+  #Ursuleti { background: url(../images/dishes/phone2x/2_01_Ursuleti.jpg); }
+  #Coltunasi-Fat-Frumos { background: url(../images/dishes/phone2x/2_02_Coltunasi-Fat-Frumos.jpg); }
+  #Placinte { background: url(../images/dishes/phone2x/2_03_Placinte.jpg); }
+  #Sarmale-ca-la-Mama { background: url(../images/dishes/phone2x/2_04_Sarmale-ca-la-Mama.jpg); }
+  #Mititei { background: url(../images/dishes/phone2x/2_05_Mititei.jpg); }
+  #Carnaciori { background: url(../images/dishes/phone2x/2_06_Carnaciori.jpg); }
+  #Jumari { background: url(../images/dishes/phone2x/2_07_Jumari.jpg); }
+  #Chiperi-Umpluti:before { content: "\f117"; }
+  #Cascaval-Pane:before { content: "\f117"; }
+  #Coltunasi-Lenesi:before { content: "\f117"; }
+  
 /* Dessert */
-	#Mere-sau-Pere-Coapte { background: url(../images/dishes/phone2x/3_01_Mere-sau-Pere-Coapte.jpg); }
-	#Prune-uscate-umplute-cu-nuci { background: url(../images/dishes/phone2x/3_02_Prune-uscate-umplute-cu-nuci.jpg); }
-	#Clatite-cu-Visine { background: url(../images/dishes/phone2x/3_03_Clatite-cu-Visine.jpg); }
-	#Placinta-cu-Bostan { background: url(../images/dishes/phone2x/3_04_Placinta-cu-Bostan.jpg); }
-	#Platou-cu-Fructe { background: url(../images/dishes/phone2x/3_05_Platou-cu-Fructe.jpg); }
-	#Napoleon { background: url(../images/dishes/phone2x/3_06_Napoleon.jpg); }
-	#Dessert-Moldova { background: url(../images/dishes/phone2x/3_06_Dessert-Moldova.jpg); }
-	#Placinte-cu-Visina { background: url(../images/dishes/phone2x/3_07_Placinte-cu-Visina.jpg); }
-	#Coltunasi-cu-Visina:before { content: "\f117"; }
-	#Papanasi-prajiti:before { content: "\f117"; }
-	#Baba-Alba:before { content: "\f117"; }
-	#Baba-Neagra:before { content: "\f117"; }
+  #Mere-sau-Pere-Coapte { background: url(../images/dishes/phone2x/3_01_Mere-sau-Pere-Coapte.jpg); }
+  #Prune-uscate-umplute-cu-nuci { background: url(../images/dishes/phone2x/3_02_Prune-uscate-umplute-cu-nuci.jpg); }
+  #Clatite-cu-Visine { background: url(../images/dishes/phone2x/3_03_Clatite-cu-Visine.jpg); }
+  #Placinta-cu-Bostan { background: url(../images/dishes/phone2x/3_04_Placinta-cu-Bostan.jpg); }
+  #Platou-cu-Fructe { background: url(../images/dishes/phone2x/3_05_Platou-cu-Fructe.jpg); }
+  #Napoleon { background: url(../images/dishes/phone2x/3_06_Napoleon.jpg); }
+  #Dessert-Moldova { background: url(../images/dishes/phone2x/3_06_Dessert-Moldova.jpg); }
+  #Placinte-cu-Visina { background: url(../images/dishes/phone2x/3_07_Placinte-cu-Visina.jpg); }
+  #Coltunasi-cu-Visina:before { content: "\f117"; }
+  #Papanasi-prajiti:before { content: "\f117"; }
+  #Baba-Alba:before { content: "\f117"; }
+  #Baba-Neagra:before { content: "\f117"; }
 
 /* Main Entrees */
-	#Mamaliga-Trapeza { background: url(../images/dishes/phone2x/4_01_Mamaliga-Trapeza.jpg); }
-	#Costita { background: url(../images/dishes/phone2x/4_02_Costita.jpg); }
-	#Snitzel { background: url(../images/dishes/phone2x/4_03_Snitzel.jpg); }
-	#Medalion { background: url(../images/dishes/phone2x/4_04_Medalion.jpg); }
-	#Pastrav { background: url(../images/dishes/phone2x/4_05_Pastrav.jpg); }
-	#Ceafa-de-Porc { background: url(../images/dishes/phone2x/4_06_Ceafa-de-Porc.jpg); }
-	#Antricot { background: url(../images/dishes/phone2x/4_07_Antricot.jpg); }
-	#Carp { background: url(../images/dishes/phone2x/4_08_Carp.jpg); }
-	#Somon { background: url(../images/dishes/phone2x/4_09_Somon.jpg); }
-	#Ficatei-de-pui-la-tigaie { background: url(../images/dishes/phone2x/4_10_Ficatei-de-pui-la-tigaie.jpg); }
-	#Frigarui-de-Porc { background: url(../images/dishes/phone2x/4_11_Frigarui-de-Porc.jpg); }
-	#Frigarui-de-Gaina { background: url(../images/dishes/phone2x/4_12_Frigarui-de-Gaina.jpg?2); }
-	#Frigarui-de-Miel { background: url(../images/dishes/phone2x/4_13_Frigarui-de-Miel.jpg); }
-	#Costita-de-Vita { background: url(../images/dishes/phone2x/4_14_Costita-de-Vita.jpg); }
-	#Zander { background: url(../images/dishes/phone2x/4_15_Zander.jpg); }
-	#Iepure-fript { background: url(../images/dishes/phone2x/4_16_Iepure-fript.jpg); }
-	#Perjoale-ca-la-Tiraspol:before { content: "\f117"; }
-	#Pui-la-Gratar { background: url(../images/dishes/phone2x/4_18_Pui-la-Gratar.jpg); }
-	#Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }
-	#Friptura-de-meil-Ciulama { background: url(../images/dishes/phone2x/4_20_Friptura-de-meil-Ciulama.jpg); }
-	#Muschi-de-porc-la-gratar:before { content: "\f117"; }
-	#Snitel-de-porc-in-still-francez:before { content: "\f117"; }
-	
+  #Mamaliga-Trapeza { background: url(../images/dishes/phone2x/4_01_Mamaliga-Trapeza.jpg); }
+  #Costita { background: url(../images/dishes/phone2x/4_02_Costita.jpg); }
+  #Snitzel { background: url(../images/dishes/phone2x/4_03_Snitzel.jpg); }
+  #Medalion { background: url(../images/dishes/phone2x/4_04_Medalion.jpg); }
+  #Pastrav { background: url(../images/dishes/phone2x/4_05_Pastrav.jpg); }
+  #Ceafa-de-Porc { background: url(../images/dishes/phone2x/4_06_Ceafa-de-Porc.jpg); }
+  #Antricot { background: url(../images/dishes/phone2x/4_07_Antricot.jpg); }
+  #Carp { background: url(../images/dishes/phone2x/4_08_Carp.jpg); }
+  #Somon { background: url(../images/dishes/phone2x/4_09_Somon.jpg); }
+  #Ficatei-de-pui-la-tigaie { background: url(../images/dishes/phone2x/4_10_Ficatei-de-pui-la-tigaie.jpg); }
+  #Frigarui-de-Porc { background: url(../images/dishes/phone2x/4_11_Frigarui-de-Porc.jpg); }
+  #Frigarui-de-Gaina { background: url(../images/dishes/phone2x/4_12_Frigarui-de-Gaina.jpg?2); }
+  #Frigarui-de-Miel { background: url(../images/dishes/phone2x/4_13_Frigarui-de-Miel.jpg); }
+  #Costita-de-Vita { background: url(../images/dishes/phone2x/4_14_Costita-de-Vita.jpg); }
+  #Zander { background: url(../images/dishes/phone2x/4_15_Zander.jpg); }
+  #Iepure-fript { background: url(../images/dishes/phone2x/4_16_Iepure-fript.jpg); }
+  #Perjoale-ca-la-Tiraspol:before { content: "\f117"; }
+  #Pui-la-Gratar { background: url(../images/dishes/phone2x/4_18_Pui-la-Gratar.jpg); }
+  #Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }
+  #Friptura-de-meil-Ciulama { background: url(../images/dishes/phone2x/4_20_Friptura-de-meil-Ciulama.jpg); }
+  #Muschi-de-porc-la-gratar:before { content: "\f117"; }
+  #Snitel-de-porc-in-still-francez:before { content: "\f117"; }
+  
 /* Soups */
-	#Zeama { background: url(../images/dishes/phone2x/6_01_Zeama.jpg); }
-	#Ciorba-de-Vita-cu-Fasole { background: url(../images/dishes/phone2x/6_02_Ciorba-de-Vita-cu-Fasole.jpg); }
-	#Ciorba-de-Perisoare { background: url(../images/dishes/phone2x/6_03_Ciorba-de-Perisoare.jpg); }
-	#Ciorba-de-Burta { background: url(../images/dishes/phone2x/6_04_Ciorba-de-Burta.jpg); }
-	#Bors-Rosu { background: url(../images/dishes/phone2x/6_05_Bors-Rosu.jpg); }
-	#Ciorba-de-Peste:before { content: "\f117"; }
-	
+  #Zeama { background: url(../images/dishes/phone2x/6_01_Zeama.jpg); }
+  #Ciorba-de-Vita-cu-Fasole { background: url(../images/dishes/phone2x/6_02_Ciorba-de-Vita-cu-Fasole.jpg); }
+  #Ciorba-de-Perisoare { background: url(../images/dishes/phone2x/6_03_Ciorba-de-Perisoare.jpg); }
+  #Ciorba-de-Burta { background: url(../images/dishes/phone2x/6_04_Ciorba-de-Burta.jpg); }
+  #Bors-Rosu { background: url(../images/dishes/phone2x/6_05_Bors-Rosu.jpg); }
+  #Ciorba-de-Peste:before { content: "\f117"; }
+  
 /* Side Dishes */
-	#Mamaliga { background: url(../images/dishes/phone2x/7_01_Mamaliga.jpg); }
-	#Cartofi-ca-Acasa { background: url(../images/dishes/phone2x/7_02_Cartofi-ca-Acasa.jpg); }
-	#Taitei { background: url(../images/dishes/phone2x/7_03_Taitei.jpg); }
-	#Pilaf { background: url(../images/dishes/phone2x/7_04_Pilaf.jpg); }
-	#Cartofi-Tocati { background: url(../images/dishes/phone2x/7_05_Cartofi-Tocati.jpg); }
-	#Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
-	#Porumb-dulce-la-grill:before { content: "\f117"; }
-	
+  #Mamaliga { background: url(../images/dishes/phone2x/7_01_Mamaliga.jpg); }
+  #Cartofi-ca-Acasa { background: url(../images/dishes/phone2x/7_02_Cartofi-ca-Acasa.jpg); }
+  #Taitei { background: url(../images/dishes/phone2x/7_03_Taitei.jpg); }
+  #Pilaf { background: url(../images/dishes/phone2x/7_04_Pilaf.jpg); }
+  #Cartofi-Tocati { background: url(../images/dishes/phone2x/7_05_Cartofi-Tocati.jpg); }
+  #Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
+  #Porumb-dulce-la-grill:before { content: "\f117"; }
+  
 /* Mix plates */
-	#Mititei-Carnaciori { background: url(../images/dishes/phone2x/_Mititei-Carnaciori.jpg); }
+  #Mititei-Carnaciori { background: url(../images/dishes/phone2x/_Mititei-Carnaciori.jpg); }
 
 
 /* First breakpoint is 48em (768px). 3 column layout. Tiles 250x250 pixels incl. margin at the breakpoint. */
 @media ( min-width: 48em ) {
 
-	.spinner {
-		height: 100%;
-		width: 100%;
-		float: none;
-	}
+  .spinner {
+    height: 100%;
+    width: 100%;
+    float: none;
+  }
 
-	.grid-listview .ui-listview .photo {
-		width: 100%;
-		height: 100%;
-		display: block;
-		overflow: hidden;
-	}
+  .grid-listview .ui-listview .photo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+  }
 
-	.photo{
-		background: none;
-		height: auto;
-		max-width: 100%;
-		max-height: none;
-		margin: 0;
-		left: 0;
-		z-index: -1;
-	}
-	
-/* Tablet HDPI */	
+  .photo{
+    background: none;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+    margin: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+/* Tablet HDPI */ 
 
 /* Salads */
-	#Taranesc { background: url(../images/dishes/tablet2x/5_01_Taranesc.jpg); }	
-	#Delicios { background: url(../images/dishes/tablet2x/5_02_Delicios.jpg); }
-	#Primavara { background: url(../images/dishes/tablet2x/5_03_Primavara.jpg); }
-	#Salata-cu-Carne-de-Vita { background: url(../images/dishes/tablet2x/5_04_Salata-cu-Carne-de-Vita.jpg); }
-	#Salata-din-Limba { background: url(../images/dishes/tablet2x/5_05_Salata-din-Limba.jpg); }
-	#Dunarea { background: url(../images/dishes/tablet2x/5_06_Dunarea.jpg); }
-	#Salata-de-Varza { background: url(../images/dishes/tablet2x/5_07_Salata-de-Varza.jpg); }
-	#Nistru { background: url(../images/dishes/tablet2x/5_08_Nistru.jpg); }
-	#Salata-Orheiului:before { content: "\f117"; }
-	#Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }
-	
+  #Taranesc { background: url(../images/dishes/tablet2x/5_01_Taranesc.jpg); } 
+  #Delicios { background: url(../images/dishes/tablet2x/5_02_Delicios.jpg); }
+  #Primavara { background: url(../images/dishes/tablet2x/5_03_Primavara.jpg); }
+  #Salata-cu-Carne-de-Vita { background: url(../images/dishes/tablet2x/5_04_Salata-cu-Carne-de-Vita.jpg); }
+  #Salata-din-Limba { background: url(../images/dishes/tablet2x/5_05_Salata-din-Limba.jpg); }
+  #Dunarea { background: url(../images/dishes/tablet2x/5_06_Dunarea.jpg); }
+  #Salata-de-Varza { background: url(../images/dishes/tablet2x/5_07_Salata-de-Varza.jpg); }
+  #Nistru { background: url(../images/dishes/tablet2x/5_08_Nistru.jpg); }
+  #Salata-Orheiului:before { content: "\f117"; }
+  #Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }
+  
 /* Cold Appetizers */
-	#Moldova { background: url(../images/dishes/tablet2x/1_01_Moldova.jpg); }	
-	#Platou-din-Legume-Prajite { background: url(../images/dishes/tablet2x/1_02_Legume-prajite-Platou.jpg); }
-	#Platou-de-Peste { background: url(../images/dishes/tablet2x/1_03_Platou-de-Peste.jpg); }
-	#Gogoase-Picante { background: url(../images/dishes/tablet2x/1_04_Gogoase-Picante.jpg); }
-	#Racituri { background: url(../images/dishes/tablet2x/1_05_Racituri.jpg); }
-	#Icra-de-Vinata { background: url(../images/dishes/tablet2x/1_06_Icra-de-Vinata.jpg); }
-	#Fasolita { background: url(../images/dishes/tablet2x/1_07_Fasolita.jpg); }
-	#Limba-de-Vita { background: url(../images/dishes/tablet2x/1_08_Limba-de-Vita.jpg); }
-	#Muschi-Bujenina { background: url(../images/dishes/tablet2x/1_09_Muschi-Bujenina.jpg); }
-	#Muraturi { background: url(../images/dishes/tablet2x/1_10_Muraturi.jpg); }
-	#Hering-cu-Cartofi-noi-cu-Marari { background: url(../images/dishes/tablet2x/1_11_Hering-cu-Cartofi-noi-cu-Marari.jpg); }
-	#Platou-cu-Cascaval { background: url(../images/dishes/tablet2x/1_12_Platou-cu-Cascaval.jpg); }
-	#Trapeza-Haiducului { background: url(../images/dishes/tablet2x/1_13_Trapeza-Haiducului.jpg); }
-	#Platou-de-Carne { background: url(../images/dishes/tablet2x/1_14_Platou-de-Carne.jpg); }
+  #Moldova { background: url(../images/dishes/tablet2x/1_01_Moldova.jpg); } 
+  #Platou-din-Legume-Prajite { background: url(../images/dishes/tablet2x/1_02_Legume-prajite-Platou.jpg); }
+  #Platou-de-Peste { background: url(../images/dishes/tablet2x/1_03_Platou-de-Peste.jpg); }
+  #Gogoase-Picante { background: url(../images/dishes/tablet2x/1_04_Gogoase-Picante.jpg); }
+  #Racituri { background: url(../images/dishes/tablet2x/1_05_Racituri.jpg); }
+  #Icra-de-Vinata { background: url(../images/dishes/tablet2x/1_06_Icra-de-Vinata.jpg); }
+  #Fasolita { background: url(../images/dishes/tablet2x/1_07_Fasolita.jpg); }
+  #Limba-de-Vita { background: url(../images/dishes/tablet2x/1_08_Limba-de-Vita.jpg); }
+  #Muschi-Bujenina { background: url(../images/dishes/tablet2x/1_09_Muschi-Bujenina.jpg); }
+  #Muraturi { background: url(../images/dishes/tablet2x/1_10_Muraturi.jpg); }
+  #Hering-cu-Cartofi-noi-cu-Marari { background: url(../images/dishes/tablet2x/1_11_Hering-cu-Cartofi-noi-cu-Marari.jpg); }
+  #Platou-cu-Cascaval { background: url(../images/dishes/tablet2x/1_12_Platou-cu-Cascaval.jpg); }
+  #Trapeza-Haiducului { background: url(../images/dishes/tablet2x/1_13_Trapeza-Haiducului.jpg); }
+  #Platou-de-Carne { background: url(../images/dishes/tablet2x/1_14_Platou-de-Carne.jpg); }
 
 /*  Hot Appetizers */
-	#Ursuleti { background: url(../images/dishes/tablet2x/2_01_Ursuleti.jpg); }
-	#Coltunasi-Fat-Frumos { background: url(../images/dishes/tablet2x/2_02_Coltunasi-Fat-Frumos.jpg); }
-	#Placinte { background: url(../images/dishes/tablet2x/2_03_Placinte.jpg); }
-	#Sarmale-ca-la-Mama { background: url(../images/dishes/tablet2x/2_04_Sarmale-ca-la-Mama.jpg); }
-	#Mititei { background: url(../images/dishes/tablet2x/2_05_Mititei.jpg); }
-	#Carnaciori { background: url(../images/dishes/tablet2x/2_06_Carnaciori.jpg); }
-	#Jumari { background: url(../images/dishes/tablet2x/2_07_Jumari.jpg); }
-	#Chiperi-Umpluti:before { content: "\f117"; }
-	#Cascaval-Pane:before { content: "\f117"; }
-	#Coltunasi-Lenesi:before { content: "\f117"; }
-	
+  #Ursuleti { background: url(../images/dishes/tablet2x/2_01_Ursuleti.jpg); }
+  #Coltunasi-Fat-Frumos { background: url(../images/dishes/tablet2x/2_02_Coltunasi-Fat-Frumos.jpg); }
+  #Placinte { background: url(../images/dishes/tablet2x/2_03_Placinte.jpg); }
+  #Sarmale-ca-la-Mama { background: url(../images/dishes/tablet2x/2_04_Sarmale-ca-la-Mama.jpg); }
+  #Mititei { background: url(../images/dishes/tablet2x/2_05_Mititei.jpg); }
+  #Carnaciori { background: url(../images/dishes/tablet2x/2_06_Carnaciori.jpg); }
+  #Jumari { background: url(../images/dishes/tablet2x/2_07_Jumari.jpg); }
+  #Chiperi-Umpluti:before { content: "\f117"; }
+  #Cascaval-Pane:before { content: "\f117"; }
+  #Coltunasi-Lenesi:before { content: "\f117"; }
+  
 /* Dessert */
-	#Mere-sau-Pere-Coapte { background: url(../images/dishes/tablet2x/3_01_Mere-sau-Pere-Coapte.jpg); }
-	#Prune-uscate-umplute-cu-nuci { background: url(../images/dishes/tablet2x/3_02_Prune-uscate-umplute-cu-nuci.jpg); }
-	#Clatite-cu-Visine { background: url(../images/dishes/tablet2x/3_03_Clatite-cu-Visine.jpg); }
-	#Placinta-cu-Bostan { background: url(../images/dishes/tablet2x/3_04_Placinta-cu-Bostan.jpg); }
-	#Platou-cu-Fructe { background: url(../images/dishes/tablet2x/3_05_Platou-cu-Fructe.jpg); }
-	#Napoleon { background: url(../images/dishes/tablet2x/3_06_Napoleon.jpg); }
-	#Dessert-Moldova { background: url(../images/dishes/tablet2x/3_06_Dessert-Moldova.jpg); }
-	#Placinte-cu-Visina { background: url(../images/dishes/tablet2x/3_07_Placinte-cu-Visina.jpg); }
-	#Coltunasi-cu-Visina:before { content: "\f117"; }
-	#Papanasi-prajiti:before { content: "\f117"; }
-	#Baba-Alba:before { content: "\f117"; }
-	#Baba-Neagra:before { content: "\f117"; }
-	
+  #Mere-sau-Pere-Coapte { background: url(../images/dishes/tablet2x/3_01_Mere-sau-Pere-Coapte.jpg); }
+  #Prune-uscate-umplute-cu-nuci { background: url(../images/dishes/tablet2x/3_02_Prune-uscate-umplute-cu-nuci.jpg); }
+  #Clatite-cu-Visine { background: url(../images/dishes/tablet2x/3_03_Clatite-cu-Visine.jpg); }
+  #Placinta-cu-Bostan { background: url(../images/dishes/tablet2x/3_04_Placinta-cu-Bostan.jpg); }
+  #Platou-cu-Fructe { background: url(../images/dishes/tablet2x/3_05_Platou-cu-Fructe.jpg); }
+  #Napoleon { background: url(../images/dishes/tablet2x/3_06_Napoleon.jpg); }
+  #Dessert-Moldova { background: url(../images/dishes/tablet2x/3_06_Dessert-Moldova.jpg); }
+  #Placinte-cu-Visina { background: url(../images/dishes/tablet2x/3_07_Placinte-cu-Visina.jpg); }
+  #Coltunasi-cu-Visina:before { content: "\f117"; }
+  #Papanasi-prajiti:before { content: "\f117"; }
+  #Baba-Alba:before { content: "\f117"; }
+  #Baba-Neagra:before { content: "\f117"; }
+  
 /* Main Entrees */
-	#Mamaliga-Trapeza { background: url(../images/dishes/tablet2x/4_01_Mamaliga-Trapeza.jpg); }
-	#Costita { background: url(../images/dishes/tablet2x/4_02_Costita.jpg); }
-	#Snitzel { background: url(../images/dishes/tablet2x/4_03_Snitzel.jpg); }
-	#Medalion { background: url(../images/dishes/tablet2x/4_04_Medalion.jpg); }
-	#Pastrav { background: url(../images/dishes/tablet2x/4_05_Pastrav.jpg); }
-	#Ceafa-de-Porc { background: url(../images/dishes/tablet2x/4_06_Ceafa-de-Porc.jpg); }
-	#Antricot { background: url(../images/dishes/tablet2x/4_07_Antricot.jpg); }
-	#Carp { background: url(../images/dishes/tablet2x/4_08_Carp.jpg); }
-	#Somon { background: url(../images/dishes/tablet2x/4_09_Somon.jpg); }
-	#Ficatei-de-pui-la-tigaie { background: url(../images/dishes/tablet2x/4_10_Ficatei-de-pui-la-tigaie.jpg); }
-	#Frigarui-de-Porc { background: url(../images/dishes/tablet2x/4_11_Frigarui-de-Porc.jpg); }
-	#Frigarui-de-Gaina { background: url(../images/dishes/tablet2x/4_12_Frigarui-de-Gaina.jpg?2); }
-	#Frigarui-de-Miel { background: url(../images/dishes/tablet2x/4_13_Frigarui-de-Miel.jpg); }
-	#Costita-de-Vita { background: url(../images/dishes/tablet2x/4_14_Costita-de-Vita.jpg); }
-	#Zander { background: url(../images/dishes/tablet2x/4_15_Zander.jpg); }
-	#Iepure-fript { background: url(../images/dishes/tablet2x/4_16_Iepure-fript.jpg); }
-	#Perjoale-ca-la-Tiraspol:before { content: "\f117"; }
-	#Pui-la-Gratar { background: url(../images/dishes/tablet2x/4_18_Pui-la-Gratar.jpg); }
-	#Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }
-	#Friptura-de-meil-Ciulama { background: url(../images/dishes/tablet2x/4_20_Friptura-de-meil-Ciulama.jpg); }
-	#Muschi-de-porc-la-gratar:before { content: "\f117"; }
-	#Snitel-de-porc-in-still-francez:before { content: "\f117"; }
+  #Mamaliga-Trapeza { background: url(../images/dishes/tablet2x/4_01_Mamaliga-Trapeza.jpg); }
+  #Costita { background: url(../images/dishes/tablet2x/4_02_Costita.jpg); }
+  #Snitzel { background: url(../images/dishes/tablet2x/4_03_Snitzel.jpg); }
+  #Medalion { background: url(../images/dishes/tablet2x/4_04_Medalion.jpg); }
+  #Pastrav { background: url(../images/dishes/tablet2x/4_05_Pastrav.jpg); }
+  #Ceafa-de-Porc { background: url(../images/dishes/tablet2x/4_06_Ceafa-de-Porc.jpg); }
+  #Antricot { background: url(../images/dishes/tablet2x/4_07_Antricot.jpg); }
+  #Carp { background: url(../images/dishes/tablet2x/4_08_Carp.jpg); }
+  #Somon { background: url(../images/dishes/tablet2x/4_09_Somon.jpg); }
+  #Ficatei-de-pui-la-tigaie { background: url(../images/dishes/tablet2x/4_10_Ficatei-de-pui-la-tigaie.jpg); }
+  #Frigarui-de-Porc { background: url(../images/dishes/tablet2x/4_11_Frigarui-de-Porc.jpg); }
+  #Frigarui-de-Gaina { background: url(../images/dishes/tablet2x/4_12_Frigarui-de-Gaina.jpg?2); }
+  #Frigarui-de-Miel { background: url(../images/dishes/tablet2x/4_13_Frigarui-de-Miel.jpg); }
+  #Costita-de-Vita { background: url(../images/dishes/tablet2x/4_14_Costita-de-Vita.jpg); }
+  #Zander { background: url(../images/dishes/tablet2x/4_15_Zander.jpg); }
+  #Iepure-fript { background: url(../images/dishes/tablet2x/4_16_Iepure-fript.jpg); }
+  #Perjoale-ca-la-Tiraspol:before { content: "\f117"; }
+  #Pui-la-Gratar { background: url(../images/dishes/tablet2x/4_18_Pui-la-Gratar.jpg); }
+  #Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }
+  #Friptura-de-meil-Ciulama { background: url(../images/dishes/tablet2x/4_20_Friptura-de-meil-Ciulama.jpg); }
+  #Muschi-de-porc-la-gratar:before { content: "\f117"; }
+  #Snitel-de-porc-in-still-francez:before { content: "\f117"; }
 
 /* Soups */
-	#Zeama { background: url(../images/dishes/tablet2x/6_01_Zeama.jpg); }
-	#Ciorba-de-Vita-cu-Fasole { background: url(../images/dishes/tablet2x/6_02_Ciorba-de-Vita-cu-Fasole.jpg); }
-	#Ciorba-de-Perisoare { background: url(../images/dishes/tablet2x/6_03_Ciorba-de-Perisoare.jpg); }
-	#Ciorba-de-Burta { background: url(../images/dishes/tablet2x/6_04_Ciorba-de-Burta.jpg); }
-	#Bors-Rosu { background: url(../images/dishes/tablet2x/6_05_Bors-Rosu.jpg); }
-	#Ciorba-de-Peste:before { content: "\f117"; }
-	
+  #Zeama { background: url(../images/dishes/tablet2x/6_01_Zeama.jpg); }
+  #Ciorba-de-Vita-cu-Fasole { background: url(../images/dishes/tablet2x/6_02_Ciorba-de-Vita-cu-Fasole.jpg); }
+  #Ciorba-de-Perisoare { background: url(../images/dishes/tablet2x/6_03_Ciorba-de-Perisoare.jpg); }
+  #Ciorba-de-Burta { background: url(../images/dishes/tablet2x/6_04_Ciorba-de-Burta.jpg); }
+  #Bors-Rosu { background: url(../images/dishes/tablet2x/6_05_Bors-Rosu.jpg); }
+  #Ciorba-de-Peste:before { content: "\f117"; }
+  
 /* Side Dishes */
-	#Mamaliga { background: url(../images/dishes/tablet2x/7_01_Mamaliga.jpg); }
-	#Cartofi-ca-Acasa { background: url(../images/dishes/tablet2x/7_02_Cartofi-ca-Acasa.jpg); }
-	#Taitei { background: url(../images/dishes/tablet2x/7_03_Taitei.jpg); }
-	#Pilaf { background: url(../images/dishes/tablet2x/7_04_Pilaf.jpg); }
-	#Cartofi-Tocati { background: url(../images/dishes/tablet2x/7_05_Cartofi-Tocati.jpg); }
-	#Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
-	#Porumb-dulce-la-grill:before { content: "\f117"; }	
+  #Mamaliga { background: url(../images/dishes/tablet2x/7_01_Mamaliga.jpg); }
+  #Cartofi-ca-Acasa { background: url(../images/dishes/tablet2x/7_02_Cartofi-ca-Acasa.jpg); }
+  #Taitei { background: url(../images/dishes/tablet2x/7_03_Taitei.jpg); }
+  #Pilaf { background: url(../images/dishes/tablet2x/7_04_Pilaf.jpg); }
+  #Cartofi-Tocati { background: url(../images/dishes/tablet2x/7_05_Cartofi-Tocati.jpg); }
+  #Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
+  #Porumb-dulce-la-grill:before { content: "\f117"; } 
 
 /* Mix plates */
-	#Mititei-Carnaciori { background: url(../images/dishes/tablet2x/_Mititei-Carnaciori.jpg); }
+  #Mititei-Carnaciori { background: url(../images/dishes/tablet2x/_Mititei-Carnaciori.jpg); }
 
   .grid-listview .ui-content {
     padding: .5625em; /* 9px */
@@ -1064,24 +1141,24 @@ blockquote.ui-icon-inline:before{
     border-bottom-right-radius: 0;
   }
 }
-/* Second breakpoint is 63.75em (1020px). 4 column layout. Tiles will be 250x250 pixels incl. margin again at the breakpoint. */
-@media ( min-width: 63.75em ) {
-	.grid-listview .ui-content {
-		padding: .625em; /* 10px */
-	}
-	/* Set a max-width for the last breakpoint to prevent too much stretching on large screens.
-	By setting the max-width equal to the breakpoint width minus padding we keep square tiles. */
-	.grid-listview .ui-listview {
-		max-width: 62.5em; /* 1000px */
-		margin: 0 auto;
-	}
-	/* Because of the 1000px max-width the width will always be 230px (and margin left/right 10px),
-	but we stick to percentage values for demo purposes. */
-	.grid-listview .ui-listview li {
-		width: 23%;
-		height: 230px;
-		margin: .625em 1%;
-	}
+/* Second breakpoint is 80em (1280px). 4 column layout. Tiles will be 250x250 pixels incl. margin again at the breakpoint. */
+@media ( min-width: 80em ) {
+  .grid-listview .ui-content {
+    padding: .625em; /* 10px */
+  }
+  /* Set a max-width for the last breakpoint to prevent too much stretching on large screens.
+  By setting the max-width equal to the breakpoint width minus padding we keep square tiles. */
+  .grid-listview .ui-listview {
+    max-width: 62.5em; /* 1000px */
+    margin: 0 auto;
+  }
+  /* Because of the 1000px max-width the width will always be 230px (and margin left/right 10px),
+  but we stick to percentage values for demo purposes. */
+  .grid-listview .ui-listview li {
+    width: 23%;
+    height: 230px;
+    margin: .625em 1%;
+  }
 }
 
 /* For this demo we used images with a size of 310x310 pixels. Just before the second breakpoint the images reach their max width: 1019px - 2 x 9px padding = 1001px x 30.9333% = ~310px */
