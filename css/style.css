@@ -436,31 +436,7 @@
   height: 1.8em;
 }
 
-/*===================
- * 
- * Pop-ups
- * 
- ====================*/
 
-div[data-role="popup"] p {
-  clear: both;
-  padding: .5em 1em;
-}
-
-div[data-role="popup"] div[data-role="header"] {
-  border-radius: .6em .6em 0 0
-}
-
-.ui-popup{
-  text-align: center; 
-}
-
-/* Breakpoint is 48em (768px). */
-@media ( min-width: 48em ) {
-  .ui-popup .ui-title, .ui-popup p {
-    font-size: .75em;
-  }
-}
 /*===================
  * 
  * Index page
@@ -815,13 +791,19 @@ blockquote.ui-icon-inline:before{
 }
 
 .vector-icon{
-  text-align: center;
-  font-size: 4em;
-  text-shadow: 0 -1px 0 black;
+  height: 100%;
+  width: 100%;
 }
 
-.ui-popup-container .vector-icon{
-  font-size: 11em;
+.vector-icon:after{
+  background-color: #F6F6F6;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .grid-listview .ui-listview li > .ui-btn {
@@ -856,8 +838,8 @@ blockquote.ui-icon-inline:before{
   #Dunarea { background: url(../images/dishes/phone2x/5_06_Dunarea.jpg); }
   #Salata-de-Varza { background: url(../images/dishes/phone2x/5_07_Salata-de-Varza.jpg); }
   #Nistru { background: url(../images/dishes/phone2x/5_08_Nistru.jpg); }
-  #Salata-Orheiului:before { content: "\f117"; }
-  #Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }
+  /*#Salata-Orheiului:before { content: "\f117"; }
+  #Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }*/
 
 /* Cold Appetizers */
   #Moldova { background: url(../images/dishes/phone2x/1_01_Moldova.jpg); }  
@@ -883,9 +865,9 @@ blockquote.ui-icon-inline:before{
   #Mititei { background: url(../images/dishes/phone2x/2_05_Mititei.jpg); }
   #Carnaciori { background: url(../images/dishes/phone2x/2_06_Carnaciori.jpg); }
   #Jumari { background: url(../images/dishes/phone2x/2_07_Jumari.jpg); }
-  #Chiperi-Umpluti:before { content: "\f117"; }
+  /*#Chiperi-Umpluti:before { content: "\f117"; }
   #Cascaval-Pane:before { content: "\f117"; }
-  #Coltunasi-Lenesi:before { content: "\f117"; }
+  #Coltunasi-Lenesi:before { content: "\f117"; }*/
   
 /* Dessert */
   #Mere-sau-Pere-Coapte { background: url(../images/dishes/phone2x/3_01_Mere-sau-Pere-Coapte.jpg); }
@@ -896,10 +878,10 @@ blockquote.ui-icon-inline:before{
   #Napoleon { background: url(../images/dishes/phone2x/3_06_Napoleon.jpg); }
   #Dessert-Moldova { background: url(../images/dishes/phone2x/3_06_Dessert-Moldova.jpg); }
   #Placinte-cu-Visina { background: url(../images/dishes/phone2x/3_07_Placinte-cu-Visina.jpg); }
-  #Coltunasi-cu-Visina:before { content: "\f117"; }
+  /*#Coltunasi-cu-Visina:before { content: "\f117"; }
   #Papanasi-prajiti:before { content: "\f117"; }
   #Baba-Alba:before { content: "\f117"; }
-  #Baba-Neagra:before { content: "\f117"; }
+  #Baba-Neagra:before { content: "\f117"; }*/
 
 /* Main Entrees */
   #Mamaliga-Trapeza { background: url(../images/dishes/phone2x/4_01_Mamaliga-Trapeza.jpg); }
@@ -918,12 +900,12 @@ blockquote.ui-icon-inline:before{
   #Costita-de-Vita { background: url(../images/dishes/phone2x/4_14_Costita-de-Vita.jpg); }
   #Zander { background: url(../images/dishes/phone2x/4_15_Zander.jpg); }
   #Iepure-fript { background: url(../images/dishes/phone2x/4_16_Iepure-fript.jpg); }
-  #Perjoale-ca-la-Tiraspol:before { content: "\f117"; }
+  /*#Perjoale-ca-la-Tiraspol:before { content: "\f117"; }*/
   #Pui-la-Gratar { background: url(../images/dishes/phone2x/4_18_Pui-la-Gratar.jpg); }
-  #Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }
+  /*#Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }*/
   #Friptura-de-meil-Ciulama { background: url(../images/dishes/phone2x/4_20_Friptura-de-meil-Ciulama.jpg); }
-  #Muschi-de-porc-la-gratar:before { content: "\f117"; }
-  #Snitel-de-porc-in-still-francez:before { content: "\f117"; }
+  /*#Muschi-de-porc-la-gratar:before { content: "\f117"; }
+  #Snitel-de-porc-in-still-francez:before { content: "\f117"; }*/
   
 /* Soups */
   #Zeama { background: url(../images/dishes/phone2x/6_01_Zeama.jpg); }
@@ -931,7 +913,7 @@ blockquote.ui-icon-inline:before{
   #Ciorba-de-Perisoare { background: url(../images/dishes/phone2x/6_03_Ciorba-de-Perisoare.jpg); }
   #Ciorba-de-Burta { background: url(../images/dishes/phone2x/6_04_Ciorba-de-Burta.jpg); }
   #Bors-Rosu { background: url(../images/dishes/phone2x/6_05_Bors-Rosu.jpg); }
-  #Ciorba-de-Peste:before { content: "\f117"; }
+  /*#Ciorba-de-Peste:before { content: "\f117"; }*/
   
 /* Side Dishes */
   #Mamaliga { background: url(../images/dishes/phone2x/7_01_Mamaliga.jpg); }
@@ -939,8 +921,8 @@ blockquote.ui-icon-inline:before{
   #Taitei { background: url(../images/dishes/phone2x/7_03_Taitei.jpg); }
   #Pilaf { background: url(../images/dishes/phone2x/7_04_Pilaf.jpg); }
   #Cartofi-Tocati { background: url(../images/dishes/phone2x/7_05_Cartofi-Tocati.jpg); }
-  #Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
-  #Porumb-dulce-la-grill:before { content: "\f117"; }
+  /*#Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
+  #Porumb-dulce-la-grill:before { content: "\f117"; }*/
   
 /* Mix plates */
   #Mititei-Carnaciori { background: url(../images/dishes/phone2x/_Mititei-Carnaciori.jpg); }
@@ -983,8 +965,8 @@ blockquote.ui-icon-inline:before{
   #Dunarea { background: url(../images/dishes/tablet2x/5_06_Dunarea.jpg); }
   #Salata-de-Varza { background: url(../images/dishes/tablet2x/5_07_Salata-de-Varza.jpg); }
   #Nistru { background: url(../images/dishes/tablet2x/5_08_Nistru.jpg); }
-  #Salata-Orheiului:before { content: "\f117"; }
-  #Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }
+  /*#Salata-Orheiului:before { content: "\f117"; }
+  #Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }*/
   
 /* Cold Appetizers */
   #Moldova { background: url(../images/dishes/tablet2x/1_01_Moldova.jpg); } 
@@ -1010,9 +992,9 @@ blockquote.ui-icon-inline:before{
   #Mititei { background: url(../images/dishes/tablet2x/2_05_Mititei.jpg); }
   #Carnaciori { background: url(../images/dishes/tablet2x/2_06_Carnaciori.jpg); }
   #Jumari { background: url(../images/dishes/tablet2x/2_07_Jumari.jpg); }
-  #Chiperi-Umpluti:before { content: "\f117"; }
+  /*#Chiperi-Umpluti:before { content: "\f117"; }
   #Cascaval-Pane:before { content: "\f117"; }
-  #Coltunasi-Lenesi:before { content: "\f117"; }
+  #Coltunasi-Lenesi:before { content: "\f117"; }*/
   
 /* Dessert */
   #Mere-sau-Pere-Coapte { background: url(../images/dishes/tablet2x/3_01_Mere-sau-Pere-Coapte.jpg); }
@@ -1023,10 +1005,10 @@ blockquote.ui-icon-inline:before{
   #Napoleon { background: url(../images/dishes/tablet2x/3_06_Napoleon.jpg); }
   #Dessert-Moldova { background: url(../images/dishes/tablet2x/3_06_Dessert-Moldova.jpg); }
   #Placinte-cu-Visina { background: url(../images/dishes/tablet2x/3_07_Placinte-cu-Visina.jpg); }
-  #Coltunasi-cu-Visina:before { content: "\f117"; }
+  /*#Coltunasi-cu-Visina:before { content: "\f117"; }
   #Papanasi-prajiti:before { content: "\f117"; }
   #Baba-Alba:before { content: "\f117"; }
-  #Baba-Neagra:before { content: "\f117"; }
+  #Baba-Neagra:before { content: "\f117"; }*/
   
 /* Main Entrees */
   #Mamaliga-Trapeza { background: url(../images/dishes/tablet2x/4_01_Mamaliga-Trapeza.jpg); }
@@ -1045,12 +1027,12 @@ blockquote.ui-icon-inline:before{
   #Costita-de-Vita { background: url(../images/dishes/tablet2x/4_14_Costita-de-Vita.jpg); }
   #Zander { background: url(../images/dishes/tablet2x/4_15_Zander.jpg); }
   #Iepure-fript { background: url(../images/dishes/tablet2x/4_16_Iepure-fript.jpg); }
-  #Perjoale-ca-la-Tiraspol:before { content: "\f117"; }
+  /*#Perjoale-ca-la-Tiraspol:before { content: "\f117"; }*/
   #Pui-la-Gratar { background: url(../images/dishes/tablet2x/4_18_Pui-la-Gratar.jpg); }
-  #Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }
+  /*#Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }*/
   #Friptura-de-meil-Ciulama { background: url(../images/dishes/tablet2x/4_20_Friptura-de-meil-Ciulama.jpg); }
-  #Muschi-de-porc-la-gratar:before { content: "\f117"; }
-  #Snitel-de-porc-in-still-francez:before { content: "\f117"; }
+  /*#Muschi-de-porc-la-gratar:before { content: "\f117"; }
+  #Snitel-de-porc-in-still-francez:before { content: "\f117"; }*/
 
 /* Soups */
   #Zeama { background: url(../images/dishes/tablet2x/6_01_Zeama.jpg); }
@@ -1058,7 +1040,7 @@ blockquote.ui-icon-inline:before{
   #Ciorba-de-Perisoare { background: url(../images/dishes/tablet2x/6_03_Ciorba-de-Perisoare.jpg); }
   #Ciorba-de-Burta { background: url(../images/dishes/tablet2x/6_04_Ciorba-de-Burta.jpg); }
   #Bors-Rosu { background: url(../images/dishes/tablet2x/6_05_Bors-Rosu.jpg); }
-  #Ciorba-de-Peste:before { content: "\f117"; }
+  /*#Ciorba-de-Peste:before { content: "\f117"; }*/
   
 /* Side Dishes */
   #Mamaliga { background: url(../images/dishes/tablet2x/7_01_Mamaliga.jpg); }
@@ -1066,8 +1048,8 @@ blockquote.ui-icon-inline:before{
   #Taitei { background: url(../images/dishes/tablet2x/7_03_Taitei.jpg); }
   #Pilaf { background: url(../images/dishes/tablet2x/7_04_Pilaf.jpg); }
   #Cartofi-Tocati { background: url(../images/dishes/tablet2x/7_05_Cartofi-Tocati.jpg); }
-  #Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
-  #Porumb-dulce-la-grill:before { content: "\f117"; } 
+  /*#Pastari-cu-chiperi-la-gratar:before { content: "\f117"; }
+  #Porumb-dulce-la-grill:before { content: "\f117"; } */
 
 /* Mix plates */
   #Mititei-Carnaciori { background: url(../images/dishes/tablet2x/_Mititei-Carnaciori.jpg); }
