@@ -756,7 +756,7 @@ blockquote.ui-icon-inline:before{
 
 .grid-listview .ui-btn-icon-notext:after, 
 .grid-listview .ui-btn-icon-left:after, 
-.ui-btn-icon-right:after {
+.grid-listview .ui-btn-icon-right:after {
   top: 30%;
 }
 
