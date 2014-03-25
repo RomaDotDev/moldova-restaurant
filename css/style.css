@@ -318,58 +318,6 @@
   background-image: url(../images/icons-png/youtube.png);
 }
 
-
-
-/*
-  Icon Classes
-*/
-
-/*
-.vector-icon { background: white; color: rgb(173, 177, 177); }
-
-.ui-icon-minus:before { content: "\f105"; }
-.ui-icon-arrow-r:before { content: "\f10f";  }
-.ui-icon-plus:before { content: "\f103"; }
-.ui-icon-delete:before { content: "\f10a"; font-size: 1em; margin: 3px 0 0 0; }
-
-.ui-icon-phone:before { content: "\f100"; text-decoration: none; margin-right: .3em; }
-.ui-icon-reorder:before { content: "\f101"; font-size: 1.4em; }
-.ui-icon-gift:before { content: "\f102"; }
-.ui-icon-sort:before { content: "\f103"; }
-.ui-icon-envelope:before { content: "\f104"; text-decoration: none; margin-right: .3em; }
-.ui-icon-caret-up:before { content: "\f105"; }
-.ui-icon-map-marker:before { content: "\f106"; }
-.ui-icon-google-plus:before { content: "\f108"; }
-.ui-icon-facetime-video:before { content: "\f109"; }
-.ui-icon-remove:before { content: "\f10a"; }
-.ui-icon-star:before { content: "\f10b"; }
-.ui-icon-facebook:before { content: "\f10c"; }
-.ui-icon-star-empty:before { content: "\f10d"; }
-.ui-icon-angle-right:before { content: "\f10f"; }
-.ui-icon-lunch:before { content: "\f111"; }
-.ui-icon-picture:before { content: "\f112"; }
-.ui-icon-yelp:before { content: "\f113"; }
-.ui-icon-info-sign:before { content: "\f114"; }
-.ui-icon-vkontakte:before { content: "\f115"; }
-.ui-icon-food:before { content: "\f117"; }
-.ui-icon-quote-left:before { content: "\f118"; }
-.ui-icon-youtube:before { content: "\f119"; }
-.ui-icon-search:before { content: "\f11a"; }
-.ui-icon-laptop:before { content: "\f11c"; }
-.ui-icon-twitter:before { content: "\f11d"; }
-.ui-icon-star-half:before { content: "\f11e"; }
-
-#Coffee:before { content: "\f116"; }
-#Tea:before { content: "\f10e"; }
-#Apa-Minerala:before { content: "\f110"; }
-#Punch:before { content: "\f107"; }
-#Juice:before { content: "\f11b"; }
-#Coffee:before { content: "\f116"; }
-#Espresso:before { content: "\f116"; }
-#Cappuccino:before { content: "\f116"; }
-
-*/
-
 /* Customisation for close menu and close icons */
 
 .ui-icon-reorder{
@@ -515,29 +463,29 @@ blockquote.ui-icon-inline:before{
  ====================*/
 
 #goldmanlogo{
-  background: url(../images/about-us/thumbs/goldman-sachs-logo.png);
+  background: url(../images/brooklyn/about-us/thumbs/goldman-sachs-logo.png);
 }
 
 #citilogo{
-  background: url(../images/about-us/thumbs/citigroup-logo.png);
+  background: url(../images/brooklyn/about-us/thumbs/citigroup-logo.png);
 }
 
 #suisselogo{
-  background: url(../images/about-us/thumbs/credit-suisse-logo.png);
+  background: url(../images/brooklyn/about-us/thumbs/credit-suisse-logo.png);
 }
 
 #signage{
-  background: url(../images/about-us/phone2x/signage.jpg);  
+  background: url(../images/brooklyn/about-us/phone2x/signage.jpg);  
 }
 #goldman{
-  background: url(../images/about-us/phone2x/at-goldman-sachs.jpg); 
+  background: url(../images/brooklyn/about-us/phone2x/at-goldman-sachs.jpg); 
 }
 #citi{
-  background: url(../images/about-us/phone2x/at-citigroup.jpg);
+  background: url(../images/brooklyn/about-us/phone2x/at-citigroup.jpg);
 }
 
 #suisse{
-  background: url(../images/about-us/phone2x/at-Credit-Suisse.jpg); 
+  background: url(../images/brooklyn/about-us/phone2x/at-Credit-Suisse.jpg); 
 }
 
 @media all and (max-width: 560px){
@@ -555,17 +503,17 @@ blockquote.ui-icon-inline:before{
   }
 
   #signage{
-    background: url(../images/about-us/tablet2x/signage.jpg); 
+    background: url(../images/brooklyn/about-us/tablet2x/signage.jpg); 
   }
   #goldman{
-    background: url(../images/about-us/tablet2x/at-goldman-sachs.jpg);  
+    background: url(../images/brooklyn/about-us/tablet2x/at-goldman-sachs.jpg);  
   }
   #citi{
-    background: url(../images/about-us/tablet2x/at-citigroup.jpg);
+    background: url(../images/brooklyn/about-us/tablet2x/at-citigroup.jpg);
   }
 
   #suisse{
-    background: url(../images/about-us/tablet2x/at-Credit-Suisse.jpg);  
+    background: url(../images/brooklyn/about-us/tablet2x/at-Credit-Suisse.jpg);  
   }
   
 }
@@ -627,30 +575,30 @@ blockquote.ui-icon-inline:before{
   background-size: cover!important;
 }
 
-  .family-party{  background: url(../images/gallery/phone2x/01-family-party.jpg); } 
-  .green-room-banquet-preparations{ background: url(../images/gallery/phone2x/02-green-room-banquet-preparations.jpg); }
-  .martisor{ background: url(../images/gallery/phone2x/03-martisor.jpg); }
-  .new-year-party-dancing{ background: url(../images/gallery/phone2x/04-new-year-party-dancing.jpg); }
-  .new-year-signange{ background: url(../images/gallery/phone2x/05-new-year-signange.jpg); }
-  .st-valentines-party-signage{ background: url(../images/gallery/phone2x/06-st-valentines-party-signage.jpg); }
-  .st-valentines-amor-concert{ background: url(../images/gallery/phone2x/07-st-valentines-amor-concert.jpg); }
-  .high-relief{ background: url(../images/gallery/phone2x/08-high-relief.jpg); }
-  .christmas-restaurant-signage{ background: url(../images/gallery/phone2x/09-christmas-restaurant-signage.jpg); }
-  .sign{ background: url(../images/gallery/phone2x/10-sign.jpg); }
-  .moldova-room-tables{ background: url(../images/gallery/phone2x/11-moldova-room-tables.jpg); }
-  .green-room-banquet{ background: url(../images/gallery/phone2x/12-green-room-banquet.jpg); }
-  .figurine{ background: url(../images/gallery/phone2x/13-figurine.jpg); }
-  .national-costumes{ background: url(../images/gallery/phone2x/14-national-costumes.jpg); }
-  .moldova-room-overview{ background: url(../images/gallery/phone2x/15-moldova-room-overview.jpg); }
-  .earthenware-jar{ background: url(../images/gallery/phone2x/16-earthenware-jar.jpg); }
-  .authentic-decor{ background: url(../images/gallery/phone2x/17-authentic-decor.jpg); }
-  .moldova-room-banquet-preparation{ background: url(../images/gallery/phone2x/18-moldova-room-banquet-preparation.jpg); }
-  .moldova-room-1{ background: url(../images/gallery/phone2x/19-moldova-room-1.jpg); }
-  .green-room-1{ background: url(../images/gallery/phone2x/20-green-room-1.jpg); }
-  .green-room-2{ background: url(../images/gallery/phone2x/21-green-room-2.jpg); }
-  .green-room-3{ background: url(../images/gallery/phone2x/22-green-room-3.jpg); }
-  .moldova-room-2{ background: url(../images/gallery/phone2x/23-moldova-room-2.jpg); }
-  .moldova-room-3{ background: url(../images/gallery/phone2x/24-moldova-room-3.jpg); }
+  .family-party{  background: url(../images/brooklyn/gallery/phone2x/01-family-party.jpg); } 
+  .green-room-banquet-preparations{ background: url(../images/brooklyn/gallery/phone2x/02-green-room-banquet-preparations.jpg); }
+  .martisor{ background: url(../images/brooklyn/gallery/phone2x/03-martisor.jpg); }
+  .new-year-party-dancing{ background: url(../images/brooklyn/gallery/phone2x/04-new-year-party-dancing.jpg); }
+  .new-year-signange{ background: url(../images/brooklyn/gallery/phone2x/05-new-year-signange.jpg); }
+  .st-valentines-party-signage{ background: url(../images/brooklyn/gallery/phone2x/06-st-valentines-party-signage.jpg); }
+  .st-valentines-amor-concert{ background: url(../images/brooklyn/gallery/phone2x/07-st-valentines-amor-concert.jpg); }
+  .high-relief{ background: url(../images/brooklyn/gallery/phone2x/08-high-relief.jpg); }
+  .christmas-restaurant-signage{ background: url(../images/brooklyn/gallery/phone2x/09-christmas-restaurant-signage.jpg); }
+  .sign{ background: url(../images/brooklyn/gallery/phone2x/10-sign.jpg); }
+  .moldova-room-tables{ background: url(../images/brooklyn/gallery/phone2x/11-moldova-room-tables.jpg); }
+  .green-room-banquet{ background: url(../images/brooklyn/gallery/phone2x/12-green-room-banquet.jpg); }
+  .figurine{ background: url(../images/brooklyn/gallery/phone2x/13-figurine.jpg); }
+  .national-costumes{ background: url(../images/brooklyn/gallery/phone2x/14-national-costumes.jpg); }
+  .moldova-room-overview{ background: url(../images/brooklyn/gallery/phone2x/15-moldova-room-overview.jpg); }
+  .earthenware-jar{ background: url(../images/brooklyn/gallery/phone2x/16-earthenware-jar.jpg); }
+  .authentic-decor{ background: url(../images/brooklyn/gallery/phone2x/17-authentic-decor.jpg); }
+  .moldova-room-banquet-preparation{ background: url(../images/brooklyn/gallery/phone2x/18-moldova-room-banquet-preparation.jpg); }
+  .moldova-room-1{ background: url(../images/brooklyn/gallery/phone2x/19-moldova-room-1.jpg); }
+  .green-room-1{ background: url(../images/brooklyn/gallery/phone2x/20-green-room-1.jpg); }
+  .green-room-2{ background: url(../images/brooklyn/gallery/phone2x/21-green-room-2.jpg); }
+  .green-room-3{ background: url(../images/brooklyn/gallery/phone2x/22-green-room-3.jpg); }
+  .moldova-room-2{ background: url(../images/brooklyn/gallery/phone2x/23-moldova-room-2.jpg); }
+  .moldova-room-3{ background: url(../images/brooklyn/gallery/phone2x/24-moldova-room-3.jpg); }
 
 
   #gallery .ui-content {
@@ -718,30 +666,30 @@ blockquote.ui-icon-inline:before{
 
 /* Tablet HDPI */
 
-  .family-party{  background: url(../images/gallery/tablet2x/01-family-party.jpg); } 
-  .green-room-banquet-preparations{ background: url(../images/gallery/tablet2x/02-green-room-banquet-preparations.jpg); }
-  .martisor{ background: url(../images/gallery/tablet2x/03-martisor.jpg); }
-  .new-year-party-dancing{ background: url(../images/gallery/tablet2x/04-new-year-party-dancing.jpg); }
-  .new-year-signange{ background: url(../images/gallery/tablet2x/05-new-year-signange.jpg); }
-  .st-valentines-party-signage{ background: url(../images/gallery/tablet2x/06-st-valentines-party-signage.jpg); }
-  .st-valentines-amor-concert{ background: url(../images/gallery/tablet2x/07-st-valentines-amor-concert.jpg); }
-  .high-relief{ background: url(../images/gallery/tablet2x/08-high-relief.jpg); }
-  .christmas-restaurant-signage{ background: url(../images/gallery/tablet2x/09-christmas-restaurant-signage.jpg); }
-  .sign{ background: url(../images/gallery/tablet2x/10-sign.jpg); }
-  .moldova-room-tables{ background: url(../images/gallery/tablet2x/11-moldova-room-tables.jpg); }
-  .green-room-banquet{ background: url(../images/gallery/tablet2x/12-green-room-banquet.jpg); }
-  .figurine{ background: url(../images/gallery/tablet2x/13-figurine.jpg); }
-  .national-costumes{ background: url(../images/gallery/tablet2x/14-national-costumes.jpg); }
-  .moldova-room-overview{ background: url(../images/gallery/tablet2x/15-moldova-room-overview.jpg); }
-  .earthenware-jar{ background: url(../images/gallery/tablet2x/16-earthenware-jar.jpg); }
-  .authentic-decor{ background: url(../images/gallery/tablet2x/17-authentic-decor.jpg); }
-  .moldova-room-banquet-preparation{ background: url(../images/gallery/tablet2x/18-moldova-room-banquet-preparation.jpg); }
-  .moldova-room-1{ background: url(../images/gallery/tablet2x/19-moldova-room-1.jpg); }
-  .green-room-1{ background: url(../images/gallery/tablet2x/20-green-room-1.jpg); }
-  .green-room-2{ background: url(../images/gallery/tablet2x/21-green-room-2.jpg); }
-  .green-room-3{ background: url(../images/gallery/tablet2x/22-green-room-3.jpg); }
-  .moldova-room-2{ background: url(../images/gallery/tablet2x/23-moldova-room-2.jpg); }
-  .moldova-room-3{ background: url(../images/gallery/tablet2x/24-moldova-room-3.jpg); }
+  .family-party{  background: url(../images/brooklyn/gallery/tablet2x/01-family-party.jpg); } 
+  .green-room-banquet-preparations{ background: url(../images/brooklyn/gallery/tablet2x/02-green-room-banquet-preparations.jpg); }
+  .martisor{ background: url(../images/brooklyn/gallery/tablet2x/03-martisor.jpg); }
+  .new-year-party-dancing{ background: url(../images/brooklyn/gallery/tablet2x/04-new-year-party-dancing.jpg); }
+  .new-year-signange{ background: url(../images/brooklyn/gallery/tablet2x/05-new-year-signange.jpg); }
+  .st-valentines-party-signage{ background: url(../images/brooklyn/gallery/tablet2x/06-st-valentines-party-signage.jpg); }
+  .st-valentines-amor-concert{ background: url(../images/brooklyn/gallery/tablet2x/07-st-valentines-amor-concert.jpg); }
+  .high-relief{ background: url(../images/brooklyn/gallery/tablet2x/08-high-relief.jpg); }
+  .christmas-restaurant-signage{ background: url(../images/brooklyn/gallery/tablet2x/09-christmas-restaurant-signage.jpg); }
+  .sign{ background: url(../images/brooklyn/gallery/tablet2x/10-sign.jpg); }
+  .moldova-room-tables{ background: url(../images/brooklyn/gallery/tablet2x/11-moldova-room-tables.jpg); }
+  .green-room-banquet{ background: url(../images/brooklyn/gallery/tablet2x/12-green-room-banquet.jpg); }
+  .figurine{ background: url(../images/brooklyn/gallery/tablet2x/13-figurine.jpg); }
+  .national-costumes{ background: url(../images/brooklyn/gallery/tablet2x/14-national-costumes.jpg); }
+  .moldova-room-overview{ background: url(../images/brooklyn/gallery/tablet2x/15-moldova-room-overview.jpg); }
+  .earthenware-jar{ background: url(../images/brooklyn/gallery/tablet2x/16-earthenware-jar.jpg); }
+  .authentic-decor{ background: url(../images/brooklyn/gallery/tablet2x/17-authentic-decor.jpg); }
+  .moldova-room-banquet-preparation{ background: url(../images/brooklyn/gallery/tablet2x/18-moldova-room-banquet-preparation.jpg); }
+  .moldova-room-1{ background: url(../images/brooklyn/gallery/tablet2x/19-moldova-room-1.jpg); }
+  .green-room-1{ background: url(../images/brooklyn/gallery/tablet2x/20-green-room-1.jpg); }
+  .green-room-2{ background: url(../images/brooklyn/gallery/tablet2x/21-green-room-2.jpg); }
+  .green-room-3{ background: url(../images/brooklyn/gallery/tablet2x/22-green-room-3.jpg); }
+  .moldova-room-2{ background: url(../images/brooklyn/gallery/tablet2x/23-moldova-room-2.jpg); }
+  .moldova-room-3{ background: url(../images/brooklyn/gallery/tablet2x/24-moldova-room-3.jpg); }
    
    #gallery .ui-listview li {
     float: left;
@@ -806,6 +754,12 @@ blockquote.ui-icon-inline:before{
   width: 100%;
 }
 
+.grid-listview .ui-btn-icon-notext:after, 
+.grid-listview .ui-btn-icon-left:after, 
+.ui-btn-icon-right:after {
+  top: 30%;
+}
+
 .grid-listview .ui-listview li > .ui-btn {
   padding: 0 25px 0 0;
 }
@@ -838,8 +792,8 @@ blockquote.ui-icon-inline:before{
   #Dunarea { background: url(../images/dishes/phone2x/5_06_Dunarea.jpg); }
   #Salata-de-Varza { background: url(../images/dishes/phone2x/5_07_Salata-de-Varza.jpg); }
   #Nistru { background: url(../images/dishes/phone2x/5_08_Nistru.jpg); }
-  /*#Salata-Orheiului:before { content: "\f117"; }
-  #Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }*/
+  #Salata-Orheiului { background: url(../images/dishes/phone2x/5_09_Salata-Orheiului.jpg); }
+  /*#Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }*/
 
 /* Cold Appetizers */
   #Moldova { background: url(../images/dishes/phone2x/1_01_Moldova.jpg); }  
@@ -900,7 +854,7 @@ blockquote.ui-icon-inline:before{
   #Costita-de-Vita { background: url(../images/dishes/phone2x/4_14_Costita-de-Vita.jpg); }
   #Zander { background: url(../images/dishes/phone2x/4_15_Zander.jpg); }
   #Iepure-fript { background: url(../images/dishes/phone2x/4_16_Iepure-fript.jpg); }
-  /*#Perjoale-ca-la-Tiraspol:before { content: "\f117"; }*/
+  #Perjoale-ca-la-Tiraspol { background: url(../images/dishes/tablet2x/4_17_Perjoale-ca-la-Tiraspol.jpg); }
   #Pui-la-Gratar { background: url(../images/dishes/phone2x/4_18_Pui-la-Gratar.jpg); }
   /*#Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }*/
   #Friptura-de-meil-Ciulama { background: url(../images/dishes/phone2x/4_20_Friptura-de-meil-Ciulama.jpg); }
@@ -965,8 +919,8 @@ blockquote.ui-icon-inline:before{
   #Dunarea { background: url(../images/dishes/tablet2x/5_06_Dunarea.jpg); }
   #Salata-de-Varza { background: url(../images/dishes/tablet2x/5_07_Salata-de-Varza.jpg); }
   #Nistru { background: url(../images/dishes/tablet2x/5_08_Nistru.jpg); }
-  /*#Salata-Orheiului:before { content: "\f117"; }
-  #Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }*/
+  #Salata-Orheiului { background: url(../images/dishes/phone2x/5_09_Salata-Orheiului.jpg); }
+  /*#Salata-de-Fasole-Pastai-cu-Legume:before { content: "\f117"; }*/
   
 /* Cold Appetizers */
   #Moldova { background: url(../images/dishes/tablet2x/1_01_Moldova.jpg); } 
@@ -1027,7 +981,7 @@ blockquote.ui-icon-inline:before{
   #Costita-de-Vita { background: url(../images/dishes/tablet2x/4_14_Costita-de-Vita.jpg); }
   #Zander { background: url(../images/dishes/tablet2x/4_15_Zander.jpg); }
   #Iepure-fript { background: url(../images/dishes/tablet2x/4_16_Iepure-fript.jpg); }
-  /*#Perjoale-ca-la-Tiraspol:before { content: "\f117"; }*/
+  #Perjoale-ca-la-Tiraspol { background: url(../images/dishes/tablet2x/4_17_Perjoale-ca-la-Tiraspol.jpg); }
   #Pui-la-Gratar { background: url(../images/dishes/tablet2x/4_18_Pui-la-Gratar.jpg); }
   /*#Friptura-de-Pui-cu-ciuperci:before { content: "\f117"; }*/
   #Friptura-de-meil-Ciulama { background: url(../images/dishes/tablet2x/4_20_Friptura-de-meil-Ciulama.jpg); }
