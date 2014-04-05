@@ -74,6 +74,15 @@
 }
 
 @media (min-width: 60em) {
+  
+  /* TODO: limit page width
+  .ui-mobile [data-role=page]{
+    display: block;
+    position: relative;
+    max-width: 80em;
+    margin: 0 auto;
+  }
+  */
   .jqm-page .jqm-navmenu-panel .ui-li-divider,
   .jqm-page .menu-btn{
     display: none;
